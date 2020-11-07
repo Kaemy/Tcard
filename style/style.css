@@ -1,13 +1,13 @@
 body {
-  max-height: 450px;
-  background-color: #999;
+  max-height: 400px;
+  background-color: lightgray;
   font-size: 14px;
   max-width: 595px;
 }
 
 #kaktus-sidebar {
-  background: lightgray;
-  width: 127px;
+  background: #999;
+  width: 126px;
   height: 425px;
   left: 0.5%;
   top: 0.5%;
@@ -16,7 +16,7 @@ body {
 }
 #kaktus-sidebar img {
   border-radius: 10%;
-  border: solid 4px lightseagreen;
+  border: solid 3px lightseagreen;
   margin-bottom: 5%;
   -webkit-transition: 2s;
   /* Safari 3.1 to 6.0 */
@@ -80,11 +80,14 @@ body {
 }
 
 .tab-content {
-  margin-left: 128px;
-  margin-top: 1%;
+  position: absolute;
+  left: 140px;
+  top: 3px;
   border-radius: 5%;
   width: 450px;
+  height: 425px;
   background-color: white;
+  padding: 1%;
 }
 .tab-content .tc-name {
   font-size: 30px;
