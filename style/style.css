@@ -96,6 +96,7 @@ body {
   font-family: "Fredericka the Great", cursive;
   text-shadow: 1px 1px 1px lightseagreen;
   margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 .tab-content .tipspoint {
   text-align: center;
@@ -116,27 +117,97 @@ body {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
-.tab-content .blocdescri .card-titre {
-  padding: 0.2rem 0.5rem;
+.tab-content .blocdescri .descri-titre {
+  padding: 0.2rem 0 0 0.5rem;
   margin-bottom: 0;
   background-image: linear-gradient(90deg, #2b4d82, #2890ac);
   color: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   font-family: "Neucha", cursive;
   border-radius: 0.25rem 0.25rem 0 0;
+  line-height: 16px;
 }
-.tab-content .blocdescri .card-corps {
+.tab-content .blocdescri .descri-corps {
   flex: 1 1 auto;
   height: 85px;
   overflow: auto;
   padding: 0.5rem;
   font-size: 11px;
   margin-bottom: 15px;
+  text-align: justify;
 }
-.tab-content .blocdescri .card-corps .perso-ava {
+.tab-content .blocdescri .descri-corps .perso-ava {
   text-align: right;
   font-size: 9px;
   margin-top: -5px;
+}
+.tab-content .badge-arene {
+  width: 265px;
+  margin: 10px;
+  border-radius: 0.25rem;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.tab-content .badge-arene .badge-titre {
+  padding: 0.2rem 0 0 0.5rem;
+  margin-bottom: 0;
+  background-image: linear-gradient(90deg, #2b4d82, #2890ac);
+  color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  font-family: "Neucha", cursive;
+  border-radius: 0.25rem 0.25rem 0 0;
+  line-height: 16px;
+}
+.tab-content .badge-arene .badge-corps {
+  flex: 1 1 auto;
+  height: 45px;
+  padding: 0.5rem;
+  font-size: 11px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.tab-content .badge-arene .badge-corps .badge-text {
+  margin-bottom: 0;
+}
+.tab-content .badge-arene .badge-corps .bloc-arene {
+  margin-left: 7px;
+}
+.tab-content .badge-arene .badge-corps .bloc-arene img {
+  margin-top: -5px;
+}
+.tab-content .badge-arene .badge-corps .bloc-arene .bad2 {
+  margin-left: 7px;
+}
+.tab-content .badge-arene .badge-corps .bloc-arene .nope {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.tab-content .badge-arene .badge-corps .bloc-arene2 {
+  margin-left: -2px;
+}
+.tab-content .badge-arene .badge-corps .bloc-arene2 img {
+  margin-top: -3px;
+}
+.tab-content .badge-arene .badge-corps .bloc-arene2 .bad2 {
+  margin-left: 8px;
+}
+.tab-content .badge-arene .badge-corps .bloc-arene2 .bad3 {
+  margin-left: -5px;
+  margin-right: 3px;
+}
+.tab-content .badge-arene .badge-corps .bloc-arene2 .nope {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.tab-content .badge-arene .badge-corps .bloc-arene3 {
+  margin-left: 10px;
+}
+.tab-content .badge-arene .badge-corps .bloc-arene3 img {
+  margin-top: -5px;
+}
+.tab-content .badge-arene .badge-corps .bloc-arene3 .nope {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 /*# sourceMappingURL=style.css.map */
