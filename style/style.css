@@ -8,7 +8,7 @@ body {
   background: lightgray;
   width: 127px;
   height: 425px;
-  left: 1%;
+  left: 0.5%;
   top: 1%;
   position: fixed;
   border-radius: 10%;
@@ -79,7 +79,7 @@ body {
 }
 
 .tab-content {
-  margin-left: 135px;
+  margin-left: 128px;
   margin-top: 1%;
   border-radius: 5%;
   width: 450px;
