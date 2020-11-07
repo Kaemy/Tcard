@@ -99,13 +99,44 @@ body {
 }
 .tab-content .tipspoint {
   text-align: center;
+  margin-bottom: 10px;
 }
 .tab-content .tipspoint .badge {
   padding: 4px;
   margin: 5px;
   width: 60px;
-  text-transform: uppercase;
-  background-image: linear-gradient(145deg, rgba(232, 87, 237, 0.15) 0%, rgba(109, 137, 69, 0.15) 100%), linear-gradient(75deg, #218ab8, #00f1b5);
+  font-family: "Neucha", cursive;
+  letter-spacing: 2px;
+  background-image: linear-gradient(90deg, #2b4d82, #2890ac);
+}
+.tab-content .blocdescri {
+  width: 430px;
+  margin: auto;
+  border-radius: 0.25rem;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.tab-content .blocdescri .card-titre {
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 0;
+  background-image: linear-gradient(90deg, #2b4d82, #2890ac);
+  color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  font-family: "Neucha", cursive;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+.tab-content .blocdescri .card-corps {
+  flex: 1 1 auto;
+  height: 85px;
+  overflow: auto;
+  padding: 0.5rem;
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+.tab-content .blocdescri .card-corps .perso-ava {
+  text-align: right;
+  font-size: 9px;
+  margin-top: -5px;
 }
 
 /*# sourceMappingURL=style.css.map */
