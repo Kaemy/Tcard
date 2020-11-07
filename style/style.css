@@ -1,7 +1,8 @@
 body {
-  max-height: 400px;
+  max-height: 450px;
   background-color: #999;
   font-size: 14px;
+  max-width: 595px;
 }
 
 #kaktus-sidebar {
@@ -9,7 +10,7 @@ body {
   width: 127px;
   height: 425px;
   left: 0.5%;
-  top: 1%;
+  top: 0.5%;
   position: fixed;
   border-radius: 10%;
 }
