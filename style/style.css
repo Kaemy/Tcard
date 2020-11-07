@@ -1,6 +1,96 @@
 body {
-  max-height: 600px;
+  max-height: 400px;
   background-color: #999;
+  font-size: 14px;
+}
+
+#kaktus-sidebar {
+  background: lightgray;
+  width: 127px;
+  height: 425px;
+  left: 1%;
+  top: 1%;
+  position: fixed;
+  border-radius: 10%;
+}
+#kaktus-sidebar img {
+  border-radius: 10%;
+  border: solid 4px lightseagreen;
+  margin-bottom: 5%;
+  -webkit-transition: 2s;
+  /* Safari 3.1 to 6.0 */
+  transition: 2s;
+}
+#kaktus-sidebar img:hover {
+  -webkit-transition: 2s;
+  transition: 2s;
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+#kaktus-sidebar .navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+#kaktus-sidebar .navigation .blc-onglets {
+  width: 128px;
+  text-align: justify;
+}
+#kaktus-sidebar .navigation .blc-onglets a {
+  color: lightseagreen;
+  text-decoration: none;
+}
+#kaktus-sidebar .navigation .blc-onglets a:hover {
+  color: darkslategray;
+}
+#kaktus-sidebar .navigation .blc-onglets span {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+#kaktus-sidebar .navigation .blc-onglets .pills-link {
+  display: block;
+  width: 105px;
+  padding: 3px 2px;
+  border: solid 1px darkslategrey;
+  border-radius: 10%;
+  margin: 2.5% auto;
+  background-color: white;
+}
+#kaktus-sidebar .navigation .blc-onglets .active {
+  color: #fff !important;
+  background-color: lightseagreen;
+}
+#kaktus-sidebar .navigation .blc-onglets .fas, #kaktus-sidebar .navigation .blc-onglets .far {
+  margin-right: 7px;
+  margin-left: 1px;
+  font-size: 14px;
+}
+#kaktus-sidebar .navigation .blc-onglets .fab {
+  margin-right: 10px;
+  margin-left: 1px;
+  font-size: 14px;
+}
+#kaktus-sidebar .navigation .blc-onglets .fa-hiking {
+  margin-right: 10px;
+}
+
+.tab-content {
+  margin-left: 135px;
+  margin-top: 1%;
+  border-radius: 5%;
+  width: 450px;
+  background-color: white;
+}
+.tab-content .tc-name {
+  font-size: 30px;
+  color: darkslategrey;
+  text-align: center;
+  font-family: "Fredericka the Great", cursive;
+  text-shadow: 1px 1px 1px lightseagreen;
 }
 
 /*# sourceMappingURL=style.css.map */
