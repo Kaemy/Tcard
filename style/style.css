@@ -6,8 +6,7 @@ body {
 }
 
 #kaktus-sidebar {
-  background: #999;
-  width: 126px;
+  width: 105px;
   height: 485px;
   left: 0.5%;
   top: 0.5%;
@@ -81,10 +80,10 @@ body {
 
 .tab-content {
   position: absolute;
-  left: 140px;
+  left: 120px;
   top: 3px;
   border-radius: 5%;
-  width: 450px;
+  width: 470px;
   height: 485px;
   background-color: white;
   padding: 1%;
