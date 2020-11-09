@@ -8,7 +8,7 @@ body {
 #kaktus-sidebar {
   background: #999;
   width: 126px;
-  height: 425px;
+  height: 485px;
   left: 0.5%;
   top: 0.5%;
   position: fixed;
@@ -85,7 +85,7 @@ body {
   top: 3px;
   border-radius: 5%;
   width: 450px;
-  height: 425px;
+  height: 485px;
   background-color: white;
   padding: 1%;
 }
@@ -100,7 +100,7 @@ body {
 }
 .tab-content .tipspoint {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .tab-content .tipspoint .badge {
   padding: 3px;
@@ -116,6 +116,7 @@ body {
   border-radius: 0.25rem;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-bottom: 20px;
 }
 .tab-content .blocdescri .descri-titre {
   padding: 0.2rem 0 0 0.5rem;
@@ -125,15 +126,15 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   font-family: "Neucha", cursive;
   border-radius: 0.25rem 0.25rem 0 0;
-  line-height: 16px;
+  line-height: 17px;
+  font-size: 15px;
 }
 .tab-content .blocdescri .descri-corps {
   flex: 1 1 auto;
-  height: 85px;
+  height: 100px;
   overflow: auto;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.25rem 0.5rem;
   font-size: 11px;
-  margin-bottom: 15px;
   text-align: justify;
 }
 .tab-content .blocdescri .descri-corps .perso-ava {
@@ -156,6 +157,7 @@ body {
   border-radius: 0.25rem;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-bottom: 10px;
 }
 .tab-content .grid-tc .badge-arene .badge-titre {
   padding: 0.2rem 0 0 0.5rem;
@@ -165,14 +167,15 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   font-family: "Neucha", cursive;
   border-radius: 0.25rem 0.25rem 0 0;
-  line-height: 16px;
+  line-height: 17px;
+  font-size: 15px;
 }
 .tab-content .grid-tc .badge-arene .badge-corps {
   flex: 1 1 auto;
-  height: 35px;
+  height: 80px;
   padding: 0.5rem;
   font-size: 11px;
-  margin-bottom: 15px;
+  line-height: 23px;
   text-align: justify;
 }
 .tab-content .grid-tc .badge-arene .badge-corps .badge-text {
@@ -237,14 +240,15 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   font-family: "Neucha", cursive;
   border-radius: 0.25rem 0.25rem 0 0;
-  line-height: 16px;
+  line-height: 17px;
+  font-size: 15px;
 }
 .tab-content .grid-tc .date-cs .date-cs-corps {
   flex: 1 1 auto;
   height: 145px;
   padding: 0.5rem;
   font-size: 11px;
-  line-height: 18px;
+  line-height: 24px;
   text-align: justify;
 }
 .tab-content .grid-tc .date-cs .date-cs-corps .date-cs-text {
@@ -266,11 +270,12 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   font-family: "Neucha", cursive;
   border-radius: 0.25rem 0.25rem 0 0;
-  line-height: 16px;
+  line-height: 17px;
+  font-size: 15px;
 }
 .tab-content .grid-tc .banque .banque-corps {
   flex: 1 1 auto;
-  height: 45px;
+  height: 60px;
   padding: 0.5rem;
   font-size: 11px;
   line-height: 20px;
@@ -300,11 +305,12 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   font-family: "Neucha", cursive;
   border-radius: 0.25rem 0.25rem 0 0;
-  line-height: 16px;
+  line-height: 17px;
+  font-size: 15px;
 }
 .tab-content .grid-tc .date-obj .date-obj-corps {
   flex: 1 1 auto;
-  height: 45px;
+  height: 60px;
   padding: 0 0.5rem;
   font-size: 11px;
   line-height: 18px;
@@ -312,6 +318,38 @@ body {
 }
 .tab-content .grid-tc .date-obj .date-obj-corps .date-obj-text {
   margin-bottom: 0;
+}
+.tab-content .pokecard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(50px, auto);
+  width: 430px;
+  margin: 5px auto;
+}
+.tab-content .pokecard .coordi-card {
+  grid-column: 1;
+  grid-row: 1;
+}
+.tab-content .pokecard .coordi-text {
+  grid-column: 2;
+  grid-row: 1;
+}
+.tab-content .pokecard .elite-card {
+  grid-column: 1;
+  grid-row: 2;
+}
+.tab-content .pokecard .elite-text {
+  grid-column: 2;
+  grid-row: 2;
+}
+.tab-content .pokecard .c-card {
+  grid-column: 1/3;
+  grid-row: 3;
+}
+.tab-content .pokecard .ccard-text {
+  grid-column: 2;
+  grid-row: 3;
 }
 
 /*# sourceMappingURL=style.css.map */
