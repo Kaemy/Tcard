@@ -16,7 +16,7 @@ body {
 }
 #kaktus-sidebar img {
   border-radius: 10%;
-  border: solid 3px #2890ac;
+  border: solid 3px #2b4d82;
   margin-bottom: 5%;
   -webkit-transition: 2s;
   /* Safari 3.1 to 6.0 */
@@ -101,7 +101,7 @@ body {
 }
 .tab-content .tc-name {
   font-size: 30px;
-  color: darkslategrey;
+  color: #2b4d82;
   text-align: center;
   font-family: "Fredericka the Great", cursive;
   text-shadow: 1px 1px 1px #2890ac;
