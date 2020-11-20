@@ -540,7 +540,36 @@ body {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-gap: 10px;
-            grid-auto-rows: minmax(100px, auto);
+            grid-auto-rows: minmax(10px, auto);
+
+            .pkmn-espece {
+                display: flex;
+                justify-content: center;
+                grid-column: 1/5;
+                grid-row: 1;
+                font-size: 16px;
+                color: white;
+                font-family: "Neucha", cursive;
+                letter-spacing: 1px;
+                text-align: center;
+                background-image: linear-gradient(90deg, #2b4d82, #2890ac);
+                border-radius: 10px;
+                padding-top: 2px;
+
+                .fas {
+                    margin-left: 10px;
+                    margin-top: 2px;
+                    margin-right: 10px;
+                }
+
+                .type {
+                    height: 17px;
+                    width: 19px;
+                    margin: 2px 0 2px 10px;
+                    border: solid 1px white;
+                    border-radius: 10px;
+                }
+            }
 
             .sprite {
                 border-radius: 5px;
@@ -549,7 +578,7 @@ body {
                 display: flex;
                 justify-content: center;
                 grid-column: 1;
-                grid-row: 1;
+                grid-row: 2;
             }
         }
 
