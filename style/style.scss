@@ -90,7 +90,7 @@ body {
     }
 }
 /* DEBUT GENERAL DES CONTENUS */
-.tab-content {
+.content-tc {
     position: absolute;
     left: 115px;
     top: 3px;
@@ -109,7 +109,6 @@ body {
         margin-bottom: 5px;
         letter-spacing: 2px;
     }
-
     /* FIN DE LA PARTIE GENERALE DES CONTENUS */
 
     /* DEBUT DE LA PARTIE CONCERNANT LES INFORMATIONS GENERALES SUR LE PERSONNAGE */
@@ -126,7 +125,6 @@ body {
             background-image: linear-gradient(90deg, rgb(43, 77, 130),rgb(40, 144, 172));
         }
     }
-
     .blocdescri {
         width: 465px;
         margin: auto;
@@ -162,7 +160,6 @@ body {
             }
         }
     }
-
     .grid-tc {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -378,7 +375,7 @@ body {
     /* Inventaire */
     .Inventaire {
         clear:both;
-        width:470px; 
+        width:465px; 
         margin: 15px auto 18px auto;
 
         input[type=radio] {
@@ -447,7 +444,7 @@ body {
     /* Obtention / Utilisation / CEIR */
         .Obtention {
             clear:both;
-            width:470px; 
+            width:465px; 
             margin: 15px auto 0 auto;
     
             input[type=radio] {
@@ -513,6 +510,52 @@ body {
         }
 
     /* FIN DE LA PARTIE CONCERNANT L'INVENTAIRE */
+
+    /* DEBUT DE LA PARTIE CONCERNANT LES POKEMONS */
+
+    .content-pkmn {
+        width: 465px;
+        margin: 15px auto 18px auto;
+
+        .nav-link {
+            display: block;
+            padding: 0.3rem 0.4rem;
+            margin-top: 2px;
+
+            &.active {
+                border-bottom: solid 2px #2890ac;
+                background-color: transparent;
+                border-radius: 15px;
+            }
+        }
+
+        .nav {
+            justify-content: center;
+            height: 75px;
+            overflow: auto;
+            border: solid 1px lightgrey;
+            border-radius: 5px;
+        }
+        .grid-pkmn {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
+
+            .sprite {
+                border-radius: 5px;
+                border: solid 1px lightgrey;
+                padding: 2px;
+                display: flex;
+                justify-content: center;
+                grid-column: 1;
+                grid-row: 1;
+            }
+        }
+
+    }
+
+    /* DEBUT DE LA PARTIE CONCERNANT LES POKEMONS */
 
     /* DEBUT DE LA PARTIE CONCERNANT LES CARDS */
     .pokecard {
