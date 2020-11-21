@@ -143,7 +143,7 @@ body {
 }
 .content-tc .blocdescri .descri-corps {
   flex: 1 1 auto;
-  height: 100px;
+  height: 108px;
   overflow: auto;
   padding: 0.5rem 0.5rem 0.25rem 0.5rem;
   font-size: 11px;
@@ -520,7 +520,7 @@ body {
   border-radius: 5px;
   border: solid 1px lightgrey;
   padding: 6px 10px;
-  font-size: 12px;
+  font-size: 11px;
 }
 .content-tc .content-pkmn .grid-pkmn .pkmn-infos span {
   color: #2890ac;

@@ -17,9 +17,9 @@
         <div class="navigation">
             <div class="blc-onglets">
               <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="pills-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fab fa-odnoklassniki"></i><span>Kaktus</span></a>
+                <a class="pills-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fab fa-odnoklassniki"></i><span>Kaktus</span></a>
                 <a class="pills-link" id="v-pills-sac-tab" data-toggle="pill" href="#v-pills-sac" role="tab" aria-controls="v-pills-sac" aria-selected="false"><i class="fas fa-shopping-bag"></i><span>Sac</span></a>
-                <a class="pills-link active" id="v-pills-pkmn-tab" data-toggle="pill" href="#v-pills-pkmn" role="tab" aria-controls="v-pills-pkmn" aria-selected="false"><i class="fas fa-paw"></i><span>Pokémons</span></a>
+                <a class="pills-link" id="v-pills-pkmn-tab" data-toggle="pill" href="#v-pills-pkmn" role="tab" aria-controls="v-pills-pkmn" aria-selected="false"><i class="fas fa-paw"></i><span>Pokémons</span></a>
                 <a class="pills-link" id="v-pills-pkmn2-tab" data-toggle="pill" href="#v-pills-pkmn2" role="tab" aria-controls="v-pills-pkmn2" aria-selected="false"><i class="fas fa-paw"></i><span>Pokémons 2</span></a>
                 <a class="pills-link" id="v-pills-pkmn3-tab" data-toggle="pill" href="#v-pills-pkmn3" role="tab" aria-controls="v-pills-pkmn3" aria-selected="false"><i class="fas fa-paw"></i><span>Pokémons 3</span></a>
                 <a class="pills-link" id="v-pills-contact-tab" data-toggle="pill" href="#v-pills-contact" role="tab" aria-controls="v-pills-contact" aria-selected="false"><i class="fas fa-users"></i><span>Contacts</span></a>
@@ -32,7 +32,7 @@
     </div>
     <div class="col-9">
         <div class="tab-content content-tc" id="v-pills-tabContent">
-          <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
             <div class="tc-name">Kaktus Vateuhpicker</div>
             <div class="tipspoint">
               <span class="badge badge-secondary">23 ans</span>
@@ -482,136 +482,178 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade show active" id="v-pills-pkmn" role="tabpanel" aria-labelledby="v-pills-pkmn-tab">
+          <div class="tab-pane fade" id="v-pills-pkmn" role="tabpanel" aria-labelledby="v-pills-pkmn-tab">
             <div class="tc-name">Les Pokémons 1 - U.C.</div>
             <div class="content-pkmn">
               <ul class="nav nav-pills mb-3" id="pkmn-tab1" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" id="pkmn1" data-toggle="pill" href="#p-pkmn1" role="tab" aria-controls="p-pkmn1" aria-selected="true"><img src="https://i.imgur.com/DwsXKrx.png"></a>
+                  <a class="nav-link active" id="pkmn1" data-toggle="pill" href="#p-pkmn1" role="tab" aria-controls="p-pkmn1" aria-selected="true"><img src="./img/sprites/LudicoloS-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn2" data-toggle="pill" href="#p-pkmn2" role="tab" aria-controls="p-pkmn2" aria-selected="false"><img src="https://i.imgur.com/vqrGI6X.png"></a>
+                  <a class="nav-link" id="pkmn2" data-toggle="pill" href="#p-pkmn2" role="tab" aria-controls="p-pkmn2" aria-selected="false"><img src="./img/sprites/NoeunoeufS-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn3" data-toggle="pill" href="#p-pkmn3" role="tab" aria-controls="p-pkmn3" aria-selected="false"><img src="https://i.imgur.com/rRXgEY5.png"></a>
+                  <a class="nav-link" id="pkmn3" data-toggle="pill" href="#p-pkmn3" role="tab" aria-controls="p-pkmn3" aria-selected="false"><img src="./img/sprites/MoustillonS-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn4" data-toggle="pill" href="#p-pkmn4" role="tab" aria-controls="p-pkmn4" aria-selected="false"><img src="https://i.imgur.com/Oo5BGPw.png"></a>
+                  <a class="nav-link" id="pkmn4" data-toggle="pill" href="#p-pkmn4" role="tab" aria-controls="p-pkmn4" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn5" data-toggle="pill" href="#p-pkmn5" role="tab" aria-controls="p-pkmn5" aria-selected="false"><img src="https://i.imgur.com/JbQeRGz.png"></a>
+                  <a class="nav-link" id="pkmn5" data-toggle="pill" href="#p-pkmn5" role="tab" aria-controls="p-pkmn5" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn6" data-toggle="pill" href="#p-pkmn6" role="tab" aria-controls="p-pkmn6" aria-selected="false"><img src="https://i.imgur.com/VokjLZ4.png"></a>
+                  <a class="nav-link" id="pkmn6" data-toggle="pill" href="#p-pkmn6" role="tab" aria-controls="p-pkmn6" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn7" data-toggle="pill" href="#p-pkmn7" role="tab" aria-controls="p-pkmn7" aria-selected="false"><img src="https://i.imgur.com/k28YkNs.png"></a>
+                  <a class="nav-link" id="pkmn7" data-toggle="pill" href="#p-pkmn7" role="tab" aria-controls="p-pkmn7" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn8" data-toggle="pill" href="#p-pkmn8" role="tab" aria-controls="p-pkmn8" aria-selected="false"><img src="https://www.pokepedia.fr/images/2/2f/Miniature_194_XY.png"></a>
+                  <a class="nav-link" id="pkmn8" data-toggle="pill" href="#p-pkmn8" role="tab" aria-controls="p-pkmn8" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn9" data-toggle="pill" href="#p-pkmn9" role="tab" aria-controls="p-pkmn9" aria-selected="false"><img src="https://www.pokepedia.fr/images/f/fe/Miniature_422_Occident_XY.png"></a>
+                  <a class="nav-link" id="pkmn9" data-toggle="pill" href="#p-pkmn9" role="tab" aria-controls="p-pkmn9" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn10" data-toggle="pill" href="#p-pkmn10" role="tab" aria-controls="p-pkmn10" aria-selected="false"><img src="https://www.pokepedia.fr/images/3/39/Miniature_133_XY.png"></a>
+                  <a class="nav-link" id="pkmn10" data-toggle="pill" href="#p-pkmn10" role="tab" aria-controls="p-pkmn10" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn11" data-toggle="pill" href="#p-pkmn11" role="tab" aria-controls="p-pkmn11" aria-selected="false"><img src="https://www.pokepedia.fr/images/f/fe/Miniature_422_Occident_XY.png"></a>
+                  <a class="nav-link" id="pkmn11" data-toggle="pill" href="#p-pkmn11" role="tab" aria-controls="p-pkmn11" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn12" data-toggle="pill" href="#p-pkmn12" role="tab" aria-controls="p-pkmn12" aria-selected="false"><img src="https://www.pokepedia.fr/images/7/73/Miniature_747_SL.png"></a>
+                  <a class="nav-link" id="pkmn12" data-toggle="pill" href="#p-pkmn12" role="tab" aria-controls="p-pkmn12" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn13" data-toggle="pill" href="#p-pkmn13" role="tab" aria-controls="p-pkmn13" aria-selected="false"><img src="https://www.pokepedia.fr/images/f/fe/Miniature_422_Occident_XY.png"></a>
+                  <a class="nav-link" id="pkmn13" data-toggle="pill" href="#p-pkmn13" role="tab" aria-controls="p-pkmn13" aria-selected="false"><img src="./img/sprites/Dracolosse-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn14" data-toggle="pill" href="#p-pkmn14" role="tab" aria-controls="p-pkmn14" aria-selected="false"><img src="https://www.pokepedia.fr/images/9/9d/Miniature_728_SL.png"></a>
+                  <a class="nav-link" id="pkmn14" data-toggle="pill" href="#p-pkmn14" role="tab" aria-controls="p-pkmn14" aria-selected="false"><img src="./img/sprites/Pingoleon-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn15" data-toggle="pill" href="#p-pkmn15" role="tab" aria-controls="p-pkmn15" aria-selected="false"><img src="https://www.pokepedia.fr/images/4/48/Miniature_468_XY.png"></a>
+                  <a class="nav-link" id="pkmn15" data-toggle="pill" href="#p-pkmn15" role="tab" aria-controls="p-pkmn15" aria-selected="false"><img src="./img/sprites/Florizarre-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn16" data-toggle="pill" href="#p-pkmn16" role="tab" aria-controls="p-pkmn16" aria-selected="false"><img src="https://www.pokepedia.fr/images/e/ed/Miniature_258_XY.png"></a>
+                  <a class="nav-link" id="pkmn16" data-toggle="pill" href="#p-pkmn16" role="tab" aria-controls="p-pkmn16" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn17" data-toggle="pill" href="#p-pkmn17" role="tab" aria-controls="p-pkmn17" aria-selected="false"><img src="https://www.pokepedia.fr/images/d/d6/Miniature_722_SL.png"></a>
+                  <a class="nav-link" id="pkmn17" data-toggle="pill" href="#p-pkmn17" role="tab" aria-controls="p-pkmn17" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn18" data-toggle="pill" href="#p-pkmn18" role="tab" aria-controls="p-pkmn18" aria-selected="false"><img src="https://www.pokepedia.fr/images/7/73/Miniature_007_XY.png"></a>
+                  <a class="nav-link" id="pkmn18" data-toggle="pill" href="#p-pkmn18" role="tab" aria-controls="p-pkmn18" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn19" data-toggle="pill" href="#p-pkmn19" role="tab" aria-controls="p-pkmn19" aria-selected="false"><img src="https://www.pokepedia.fr/images/6/6e/Miniature_158_XY.png"></a>
+                  <a class="nav-link" id="pkmn19" data-toggle="pill" href="#p-pkmn19" role="tab" aria-controls="p-pkmn19" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn20" data-toggle="pill" href="#p-pkmn20" role="tab" aria-controls="p-pkmn20" aria-selected="false"><img src="https://www.pokepedia.fr/images/4/41/Miniature_650_XY.png"></a>
+                  <a class="nav-link" id="pkmn20" data-toggle="pill" href="#p-pkmn20" role="tab" aria-controls="p-pkmn20" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn21" data-toggle="pill" href="#p-pkmn21" role="tab" aria-controls="p-pkmn21" aria-selected="true"><img src="https://i.imgur.com/DwsXKrx.png"></a>
+                  <a class="nav-link" id="pkmn21" data-toggle="pill" href="#p-pkmn21" role="tab" aria-controls="p-pkmn21" aria-selected="true"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn22" data-toggle="pill" href="#p-pkmn22" role="tab" aria-controls="p-pkmn22" aria-selected="false"><img src="https://i.imgur.com/vqrGI6X.png"></a>
+                  <a class="nav-link" id="pkmn22" data-toggle="pill" href="#p-pkmn22" role="tab" aria-controls="p-pkmn22" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn23" data-toggle="pill" href="#p-pkmn23" role="tab" aria-controls="p-pkmn23" aria-selected="false"><img src="https://i.imgur.com/rRXgEY5.png"></a>
+                  <a class="nav-link" id="pkmn23" data-toggle="pill" href="#p-pkmn23" role="tab" aria-controls="p-pkmn23" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn24" data-toggle="pill" href="#p-pkmn24" role="tab" aria-controls="p-pkmn24" aria-selected="false"><img src="https://i.imgur.com/Oo5BGPw.png"></a>
+                  <a class="nav-link" id="pkmn24" data-toggle="pill" href="#p-pkmn24" role="tab" aria-controls="p-pkmn24" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn25" data-toggle="pill" href="#p-pkmn25" role="tab" aria-controls="p-pkmn25" aria-selected="false"><img src="https://i.imgur.com/JbQeRGz.png"></a>
+                  <a class="nav-link" id="pkmn25" data-toggle="pill" href="#p-pkmn25" role="tab" aria-controls="p-pkmn25" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn26" data-toggle="pill" href="#p-pkmn26" role="tab" aria-controls="p-pkmn26" aria-selected="false"><img src="https://i.imgur.com/VokjLZ4.png"></a>
+                  <a class="nav-link" id="pkmn26" data-toggle="pill" href="#p-pkmn26" role="tab" aria-controls="p-pkmn26" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn27" data-toggle="pill" href="#p-pkmn27" role="tab" aria-controls="p-pkmn27" aria-selected="false"><img src="https://i.imgur.com/k28YkNs.png"></a>
+                  <a class="nav-link" id="pkmn27" data-toggle="pill" href="#p-pkmn27" role="tab" aria-controls="p-pkmn27" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn28" data-toggle="pill" href="#p-pkmn28" role="tab" aria-controls="p-pkmn28" aria-selected="false"><img src="https://www.pokepedia.fr/images/2/2f/Miniature_194_XY.png"></a>
+                  <a class="nav-link" id="pkmn28" data-toggle="pill" href="#p-pkmn28" role="tab" aria-controls="p-pkmn28" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn29" data-toggle="pill" href="#p-pkmn29" role="tab" aria-controls="p-pkmn29" aria-selected="false"><img src="https://www.pokepedia.fr/images/f/fe/Miniature_422_Occident_XY.png"></a>
+                  <a class="nav-link" id="pkmn29" data-toggle="pill" href="#p-pkmn29" role="tab" aria-controls="p-pkmn29" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn30" data-toggle="pill" href="#p-pkmn30" role="tab" aria-controls="p-pkmn30" aria-selected="false"><img src="https://www.pokepedia.fr/images/3/39/Miniature_133_XY.png"></a>
+                  <a class="nav-link" id="pkmn30" data-toggle="pill" href="#p-pkmn30" role="tab" aria-controls="p-pkmn30" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn31" data-toggle="pill" href="#p-pkmn31" role="tab" aria-controls="p-pkmn31" aria-selected="false"><img src="https://www.pokepedia.fr/images/f/fe/Miniature_422_Occident_XY.png"></a>
+                  <a class="nav-link" id="pkmn31" data-toggle="pill" href="#p-pkmn31" role="tab" aria-controls="p-pkmn31" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn32" data-toggle="pill" href="#p-pkmn32" role="tab" aria-controls="p-pkmn32" aria-selected="false"><img src="https://www.pokepedia.fr/images/7/73/Miniature_747_SL.png"></a>
+                  <a class="nav-link" id="pkmn32" data-toggle="pill" href="#p-pkmn32" role="tab" aria-controls="p-pkmn32" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn33" data-toggle="pill" href="#p-pkmn33" role="tab" aria-controls="p-pkmn33" aria-selected="false"><img src="https://www.pokepedia.fr/images/f/fe/Miniature_422_Occident_XY.png"></a>
+                  <a class="nav-link" id="pkmn33" data-toggle="pill" href="#p-pkmn33" role="tab" aria-controls="p-pkmn33" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn34" data-toggle="pill" href="#p-pkmn34" role="tab" aria-controls="p-pkmn34" aria-selected="false"><img src="https://www.pokepedia.fr/images/9/9d/Miniature_728_SL.png"></a>
+                  <a class="nav-link" id="pkmn34" data-toggle="pill" href="#p-pkmn34" role="tab" aria-controls="p-pkmn34" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn35" data-toggle="pill" href="#p-pkmn35" role="tab" aria-controls="p-pkmn35" aria-selected="false"><img src="https://www.pokepedia.fr/images/4/48/Miniature_468_XY.png"></a>
+                  <a class="nav-link" id="pkmn35" data-toggle="pill" href="#p-pkmn35" role="tab" aria-controls="p-pkmn35" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn36" data-toggle="pill" href="#p-pkmn36" role="tab" aria-controls="p-pkmn36" aria-selected="false"><img src="https://www.pokepedia.fr/images/e/ed/Miniature_258_XY.png"></a>
+                  <a class="nav-link" id="pkmn36" data-toggle="pill" href="#p-pkmn36" role="tab" aria-controls="p-pkmn36" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn37" data-toggle="pill" href="#p-pkmn37" role="tab" aria-controls="p-pkmn37" aria-selected="false"><img src="https://www.pokepedia.fr/images/d/d6/Miniature_722_SL.png"></a>
+                  <a class="nav-link" id="pkmn37" data-toggle="pill" href="#p-pkmn37" role="tab" aria-controls="p-pkmn37" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn38" data-toggle="pill" href="#p-pkmn38" role="tab" aria-controls="p-pkmn38" aria-selected="false"><img src="https://www.pokepedia.fr/images/7/73/Miniature_007_XY.png"></a>
+                  <a class="nav-link" id="pkmn38" data-toggle="pill" href="#p-pkmn38" role="tab" aria-controls="p-pkmn38" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn39" data-toggle="pill" href="#p-pkmn39" role="tab" aria-controls="p-pkmn39" aria-selected="false"><img src="https://www.pokepedia.fr/images/6/6e/Miniature_158_XY.png"></a>
+                  <a class="nav-link" id="pkmn39" data-toggle="pill" href="#p-pkmn39" role="tab" aria-controls="p-pkmn39" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pkmn40" data-toggle="pill" href="#p-pkmn40" role="tab" aria-controls="p-pkmn40" aria-selected="false"><img src="https://www.pokepedia.fr/images/4/41/Miniature_650_XY.png"></a>
+                  <a class="nav-link" id="pkmn40" data-toggle="pill" href="#p-pkmn40" role="tab" aria-controls="p-pkmn40" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pkmn41" data-toggle="pill" href="#p-pkmn41" role="tab" aria-controls="p-pkmn41" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pkmn42" data-toggle="pill" href="#p-pkmn42" role="tab" aria-controls="p-pkmn42" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pkmn43" data-toggle="pill" href="#p-pkmn43" role="tab" aria-controls="p-pkmn43" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pkmn44" data-toggle="pill" href="#p-pkmn44" role="tab" aria-controls="p-pkmn44" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pkmn45" data-toggle="pill" href="#p-pkmn45" role="tab" aria-controls="p-pkmn45" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pkmn46" data-toggle="pill" href="#p-pkmn46" role="tab" aria-controls="p-pkmn46" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pkmn47" data-toggle="pill" href="#p-pkmn47" role="tab" aria-controls="p-pkmn47" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pkmn48" data-toggle="pill" href="#p-pkmn48" role="tab" aria-controls="p-pkmn48" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pkmn49" data-toggle="pill" href="#p-pkmn49" role="tab" aria-controls="p-pkmn49" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pkmn50" data-toggle="pill" href="#p-pkmn50" role="tab" aria-controls="p-pkmn50" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pkmn51" data-toggle="pill" href="#p-pkmn51" role="tab" aria-controls="p-pkmn51" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pkmn52" data-toggle="pill" href="#p-pkmn52" role="tab" aria-controls="p-pkmn52" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pkmn53" data-toggle="pill" href="#p-pkmn53" role="tab" aria-controls="p-pkmn53" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pkmn54" data-toggle="pill" href="#p-pkmn54" role="tab" aria-controls="p-pkmn54" aria-selected="false"><img src="./img/sprites/Oeuf-M.png"></a>
                 </li>
               </ul>
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="p-pkmn1" role="tabpanel" aria-labelledby="pkmn1">
                   <div class="grid-pkmn">
                     <div class="pkmn-espece">Ludicolo Shiny <i class="fas fa-mars"></i> • Miror B • Lvl 56 (0/4) • <img class="type" src="./img/types/eau.png"/><img class="type" src="./img/types/plante.png"/></div>
-                    <div class="sprite"><img src="https://i.imgur.com/j3xJoK2.png"></div>
+                    <div class="sprite"><img src="./img/sprites/LudicoloS-G.png"></div>
                     <div class="pkmn-infos">
                       > La <span>rencontre</span> avec Kaktus.<br/>
                       > <span>Miror B</span> est un Ludicolo naturellement <span>perdu</span>.<br/>
@@ -619,9 +661,9 @@
                       > Blablablabla<br/>
                       > Blablablabla<br/>
                       > Blablablabla<br/>
-                      > Blablablabla<br/>
+                      > Blablablabla<br/><br/>
                       > D.O : Mary Nephilim<br/>
-                      > Obtention : Don lors d'un C.E.I.R.<br/>
+                      > Obtention : Don C.E.I.R.<br/>
                     </div>
                     <div class="stats-pkmn">
                       <div>Statistiques</div>
@@ -683,7 +725,57 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="p-pkmn2" role="tabpanel" aria-labelledby="pkmn2">pkmn2</div>
+                <div class="tab-pane fade" id="p-pkmn2" role="tabpanel" aria-labelledby="pkmn2">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Noeunoeuf Shiny <i class="fas fa-mars"></i> • Ystos • Lvl 20 (0/2) • <img class="type" src="./img/types/plante.png"/><img class="type" src="./img/types/psy.png"/></div>
+                    <div class="sprite"><img src="./img/sprites/NoeunoeufS-G.png"></div>
+                    <div class="pkmn-infos">
+                      • La <span>rencontre</span> avec Kaktus.<br/>
+                      • <span>Ystos</span> est un Noeunoeuf de nature <span>gourmand</span>.<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                      • D.O Kaktus Vateuhpicker<br/>
+                      • Obtention <a href="https://master-poke.forumactif.fr/t22855-master-poke-v-3-0#417417">Master Poké V.3.0</a><br/><br/>
+                      • Sprites validés<br/>
+                      <img src="./img/sprites/NoeunoeufS-G.png"><img src="./img/sprites/NoadkokoS-G.png">
+                    </div>
+                    <div class="stats-pkmn">
+                      <div>Statistiques</div>
+                      <span>PV :</span> 60 + 40 + xx ⇢ <span>100</span><br/>
+                      <span>ATK :</span> 40 + 00 + xx ⇢ <span>40</span><br/>
+                      <span>DEF :</span> 80 + 00 + xx ⇢ <span>80</span><br/>
+                      <span>ATK S :</span> 60 + 40 + xx ⇢ <span>100</span><br/>
+                      <span>DEF S :</span> 45 + 35 + xx ⇢ <span>80</span><br/>
+                      <span>VIT :</span> 40 + 20 + xx ⇢ <span>60</span><br/><br/>
+                      135 pts à répartir<br/>
+                      Pas de vitamines
+                    </div>
+                    <div class="atk-pkmn">
+                      <div>Montée de niveau</div>
+                      <span class="normal">Pilonnage</span>
+                      <span class="normal">Brouhaha</span>
+                      <span class="psy">Hypnose</span>
+                      <span class="psy">Protection</span>
+                      <span class="plante">Vampigraine</span>
+                      <span class="plante">Balle Graine</span>
+                      <span class="plante">Para-Spore</span>
+                      <span class="type">Attaque</span>
+                      <hr>
+                      <div>CS / CT / CR / CM</div>
+                      <span class="normal">[CS] Force</span>
+                      <span class="type">[CS] Attaque</span>
+                      <span class="type">[CS] Attaque</span>
+                      <span class="type">[CS] Attaque</span>
+                    </div>
+                    <div class="rela-pkmn">
+                      <i class="far fa-grin-beam"></i><img src="https://i.imgur.com/Oo5BGPw.png"/><img src="https://www.pokepedia.fr/images/c/c8/Miniature_657_XY.png"/><br/>
+                      <i class="far fa-frown"></i><img src="https://www.pokepedia.fr/images/c/c8/Miniature_657_XY.png"/><img src="https://i.imgur.com/Oo5BGPw.png"/><br/>
+                    </div>
+                  </div>
+                </div>
                 <div class="tab-pane fade" id="p-pkmn3" role="tabpanel" aria-labelledby="pkmn3">pkmn3</div>
                 <div class="tab-pane fade" id="p-pkmn4" role="tabpanel" aria-labelledby="pkmn4">pkmn4</div>
                 <div class="tab-pane fade" id="p-pkmn5" role="tabpanel" aria-labelledby="pkmn5">pkmn5</div>
@@ -694,8 +786,139 @@
                 <div class="tab-pane fade" id="p-pkmn10" role="tabpanel" aria-labelledby="pkmn10">pkmn10</div>
                 <div class="tab-pane fade" id="p-pkmn11" role="tabpanel" aria-labelledby="pkmn11">pkmn11</div>
                 <div class="tab-pane fade" id="p-pkmn12" role="tabpanel" aria-labelledby="pkmn12">pkmn12</div>
-                <div class="tab-pane fade" id="p-pkmn13" role="tabpanel" aria-labelledby="pkmn13">pkmn13</div>
-                <div class="tab-pane fade" id="p-pkmn14" role="tabpanel" aria-labelledby="pkmn14">pkmn14</div>
+                <div class="tab-pane fade" id="p-pkmn13" role="tabpanel" aria-labelledby="pkmn13">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Dracolosse <i class="fas fa-mars"></i> • Hélios • Lvl 60 (2/5) • <img class="type" src="./img/types/dragon.png"/><img class="type" src="./img/types/vol.png"/></div>
+                    <div class="sprite"><img src="./img/sprites/Dracolosse-G.png"></div>
+                    <div class="pkmn-infos">
+                      • <span>Hélios</span> est le tout premier pokémon de Kaktus. Lorsqu'il se sont rencontré, le Dracolosse n'était alors qu'un simple petit Minidraco en développement dans son oeuf. <br/>
+                      • Il a été <span>abandonné</span> par sa mère, créant un similitude avec le passé du coordinateur Kalosien.<br/>
+                      • <span>Hélios</span> est un véritable <span>pot-de-colle</span>, il a bien des difficultés à rester loin de son dresseur.<br/>
+                      • Blablablabla<br/><br/>
+                      • D.O Sakae Kurami<br/>
+                      • Obtention <a href="">Enchères entre membres</a><br/><br/>
+                      • Sprites validés<br/>
+                      <img src=""><img src="">
+                    </div>
+                    <div class="stats-pkmn">
+                      <div>Statistiques</div>
+                      <span>PV :</span> 91 + 109 + xx ⇢ <span>200</span><br/>
+                      <span>ATK :</span> 134 + 141 + 05 ⇢ <span>300</span><br/>
+                      <span>DEF :</span> 95 + 95 + xx ⇢ <span>190</span><br/>
+                      <span>ATK S :</span> 100 + xx + xx ⇢ <span>100</span><br/>
+                      <span>DEF S :</span> 100 + 90 + xx ⇢ <span>190</span><br/>
+                      <span>VIT :</span> 80 + 05 + 15 ⇢ <span>100</span><br/><br/>
+                      440 pts à répartir<br/>
+                      1 Protéine + 3 Carbones
+                    </div>
+                    <div class="atk-pkmn">
+                      <div>Montée de niveau</div>
+                      <span class="normal">Ligotage</span>
+                      <span class="normal">Groz'Yeux</span>
+                      <span class="electrik">Cage-Éclair</span>
+                      <span class="dragon">Ouragan</span>
+                      <span class="dragon">Draco-Rage</span>
+                      <span class="normal">Souplesse</span>
+                      <span class="psy">Hâte</span>
+                      <span class="dragon">Draco-Queue</span>
+                      <span class="eau">Hydroqueue</span>
+                      <span class="dragon">Dracocharge</span>
+                      <span class="normal">Rune Protect</span>
+                      <span class="dragon">Danse-Draco</span>
+                      <span class="dragon">Colère</span>
+                      <span class="vol">Cru-Aile</span>
+                      <span class="feu">Poing de Feu</span>
+                      <span class="electrik">Poing-Éclair</span>
+                      <span class="vol">Atterissage</span>
+                      <hr>
+                      <div>CS / CT / CR / CM</div>
+                      <span class="eau">[CS] Surf</span>
+                      <span class="eau">[CS] Cascade</span>
+                      <span class="normal">[CS] Force</span>
+                      <span class="combat">[CS] Eclate-Roc</span>
+                      <span class="normal">[CR] Vitesse Extrême</span>
+                      <span class="feu">[CT] Lance-Flammes</span>
+                      <span class="tenebres">[CT] Centrifugifle</span>
+                      <span class="combat">[CT] Casse-Brique</span>
+                      <span class="sol">[CT] Séisme</span>
+                      <span class="glace">[CT] Laser Glace</span>
+                      <span class="eau">[CT] Danse Pluie</span>
+                      <span class="electrik">[CT] Tonnerre</span>
+                      <span class="vol">[CT] Aéropique</span>
+                    </div>
+                    <div class="rela-pkmn">
+                      <i class="far fa-grin-beam"></i><img src="https://i.imgur.com/Oo5BGPw.png"/><img src="https://www.pokepedia.fr/images/c/c8/Miniature_657_XY.png"/><br/>
+                      <i class="far fa-frown"></i><img src="https://www.pokepedia.fr/images/c/c8/Miniature_657_XY.png"/><img src="https://i.imgur.com/Oo5BGPw.png"/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="p-pkmn14" role="tabpanel" aria-labelledby="pkmn14">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Pingoleon <i class="fas fa-mars"></i> • Mumble • Lvl 55 (0/4) • <img class="type" src="./img/types/eau.png"/><img class="type" src="./img/types/acier.png"/></div>
+                    <div class="sprite"><img src="./img/sprites/Pingoleon-G.png"></div>
+                    <div class="pkmn-infos">
+                      • Pingoléon est un <span>cadeau</span> des parents adoptifs de Kaktus. Obtenu sous la forme d'un <span>Tiplouf</span> était à l'origine un simple cadeau de noël, mais il représente désormais une sorte de <span>symbole de leur réconciliation</span>.<br/>
+                      • <span>Mumble</span> est de nature <span>guerrier</span>. Il était plutôt <span>timide</span> à l'origine, mais l'expérience acquise et le contact avec les autres membres de la team a développé en lui un véritable <span>esprit de guerrier</span> prêt à tout pour protéger ses proches.<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                      • D.O Roy Harrison<br/>
+                      • Obtention <a href="">Échange C.E.I.R.</a><br/><br/>
+                      • Sprites validés<br/>
+                      <img src=""><img src="">
+                    </div>
+                    <div class="stats-pkmn">
+                      <div>Statistiques</div>
+                      <span>PV :</span> 84 + 87 + xx ⇢ <span>171</span><br/>
+                      <span>ATK :</span> 86 + 00 + xx ⇢ <span>86</span><br/>
+                      <span>DEF :</span> 88 + 110 + xx ⇢ <span>198</span><br/>
+                      <span>ATK S :</span> 111 + 114 + xx ⇢ <span>225</span><br/>
+                      <span>DEF S :</span> 101 + 89 + xx ⇢ <span>190</span><br/>
+                      <span>VIT :</span> 60 + 00 + xx ⇢ <span>60</span><br/><br/>
+                      400 pts à répartir<br/>
+                      Pas de vitamines
+                    </div>
+                    <div class="atk-pkmn">
+                      <div>Montée de niveau</div>
+                      <span class="normal"> Charge</span>
+                      <span class="normal"> Rugissement</span>
+                      <span class="eau"> Écume</span>
+                      <span class="eau"> Tourniquet</span>
+                      <span class="vol"> Picpic</span>
+                      <span class="eau"> Bulles d'O</span>
+                      <span class="normal"> Patience</span>
+                      <span class="normal"> Furie</span>
+                      <span class="eau"> Saumure</span>
+                      <span class="eau"> Siphon</span>
+                      <span class="glace"> Brume</span>
+                      <span class="vol"> Bec Vrille</span>
+                      <span class="eau"> Hydrocanon</span>
+                      <span class="acier"> Griffe Acier</span>
+                      <span class="normal"> Danse Lame</span>
+                      <span class="normal"> Vantardise</span>
+                      <span class="eau"> Aqua-Jet</span>
+                      <hr>
+                      <div>CS / CT / CR / CM</div>
+                      <span class="eau">[CS] Surf</span>
+                      <span class="eau">[CS] Cascade</span>
+                      <span class="normal">[CS] Force</span>
+                      <span class="normal">[CS] Coupe</span>
+                      <span class="vol">[CS] Anti-Brûme</span>
+                      <span class="insecte">[CM] Rayon Signal</span>
+                      <span class="eau">[CR] Anneau Hydro</span>
+                      <span class="vol">[CR] Danse Plume</span>
+                      <span class="sol">[CT] Séisme</span>
+                      <span class="spectre">[CT] Griffe Ombre</span>
+                      <span class="eau">[CT] Danse Pluie</span>
+                      <span class="eau">[CT] Ébullition</span>
+                      <span class="poison">[CT] Toxik</span>
+                      <span class="plante">[CT] Noeud Herbe</span>
+                    </div>
+                    <div class="rela-pkmn">
+                      <i class="far fa-grin-beam"></i><img src="https://i.imgur.com/Oo5BGPw.png"/><img src="https://www.pokepedia.fr/images/c/c8/Miniature_657_XY.png"/><br/>
+                      <i class="far fa-frown"></i><img src="https://www.pokepedia.fr/images/c/c8/Miniature_657_XY.png"/><img src="https://i.imgur.com/Oo5BGPw.png"/><br/>
+                    </div>
+                  </div>
+                </div>
                 <div class="tab-pane fade" id="p-pkmn15" role="tabpanel" aria-labelledby="pkmn15">pkmn15</div>
                 <div class="tab-pane fade" id="p-pkmn16" role="tabpanel" aria-labelledby="pkmn16">pkmn16</div>
                 <div class="tab-pane fade" id="p-pkmn17" role="tabpanel" aria-labelledby="pkmn17">pkmn17</div>
