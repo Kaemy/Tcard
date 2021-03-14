@@ -1,6 +1,6 @@
 body {
     max-height: 400px;
-    //background-color: #eaeaea;
+    background-color: transparent;
     font-size:14px;
     max-width: 596px;
 }
@@ -41,7 +41,7 @@ body {
         flex-wrap: wrap;
 
         .blc-onglets {
-            width: 128px;
+            width: 140px;
             text-align: justify;
 
             a {
