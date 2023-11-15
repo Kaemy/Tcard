@@ -1,26 +1,38 @@
+/* VARIABLES */
+$color-main : rgb(25, 25, 112);
+$color-black: rgb(0, 0, 0);
+$color-white: rgb(255, 255, 255);
+$color-degrade: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
+$color-validate: rgb(0, 179, 41);
+$color-fail: rgb(138, 0, 0);
+$color-progress: rgb(1, 122, 131);
+$color-no: grayscale(100%);
+
 body {
-    max-height: 400px;
     background-color: transparent;
-    font-size:14px;
+    font-size: 14px;
     max-width: 596px;
+    //border: 1px solid red;
+    min-height: 550px;
 }
 
 /* PARTIE SIDEBAR */
+$width-sidebar: 135px;
 
 #kaktus-sidebar {
-    width: 135px;
-    height: 500px;
+    width: $width-sidebar;
+    height: 550px;
     left: 0.5%;
     top: 1.5%;
     position: fixed;
     border-radius: 10%;
 
     img {
-        height: 150px;
-        width: 135px;
+        height: 200px;
+        width: $width-sidebar;
         border-radius: 10%;
-        border: solid 3px rgb(43, 77, 130);
-        margin-bottom: 5%;
+        border: solid 2px $color-black;
+        margin-bottom: 15px;
         -webkit-transition: 2s; /* Safari 3.1 to 6.0 */
         transition: 2s;
 
@@ -41,15 +53,14 @@ body {
         flex-wrap: wrap;
 
         .blc-onglets {
-            width: 140px;
-            text-align: justify;
+            width: $width-sidebar;
 
             a {
-                color: rgb(40, 144, 172);
+                color: $color-main;
                 text-decoration: none;
 
                 &:hover {
-                    color: darkslategray;
+                    color: $color-black;
                 }
             }
 
@@ -61,23 +72,22 @@ body {
 
             .pills-link {
                 display: block;
-                width: 115px;
-                padding: 3px 2px;
-                border: solid 1px darkslategrey;
-                border-radius:10%;
-                margin: 3% auto;
-                background-color: white;
+                width: 135px;
+                padding: 4px 10px;
+                border: solid 1px $color-black;
+                border-radius: 20px;
+                margin: 3.4% auto;
             }
 
             .active {
                 color: #fff !important;
-                background-color: rgb(40, 144, 172);
+                background-color: $color-main;
             }
 
             .fas, .far {
                 margin-right:7px;
                 margin-left:1px;
-                font-size:14px;
+                font-size:12px;
             }
             .fab {
                 margin-right:10px;
@@ -95,444 +105,171 @@ body {
 .content-tc {
     position: absolute;
     left: 150px;
-    top: 3px;
-    border-radius: 5%;
-    width: 445px;
-    padding:1%;
+    width: 455px;
+    padding: 8px 5px 5px 5px;
 
-    .tc-name {
-        font-size: 35px;
-        color: rgb(43, 77, 130);
-        text-align:center;
-        font-family: 'Fredericka the Great', cursive;
-        text-shadow: 1px 1px 1px rgb(40, 144, 172);
-        margin-bottom: 10px;
-        letter-spacing: 4px;
-        margin-top: 10px;
-    }
  /* FIN DE LA PARTIE GENERALE DES CONTENUS */
 
     /* DEBUT DE LA PARTIE CONCERNANT LES INFORMATIONS GENERALES SUR LE PERSONNAGE */
-    .tipspoint {
-        text-align: center;
-        margin-bottom: 20px;
 
-        .badge {
-            padding: 3px;
-            margin: 5px 3px;
-            width: 85px;
-            font-family: 'Neucha', cursive;
-            letter-spacing: 2px;
-            background-image: linear-gradient(90deg, rgb(43, 77, 130),rgb(40, 144, 172));
+    .perso-ident {
+        justify-content: center;
+        width: 420px;
+        font-size: 15px;
+        color: white;
+        font-family: "Neucha", cursive;
+        letter-spacing: 1px;
+        text-align: center;
+        background-image: $color-degrade;
+        border-radius: 10px;
+        padding-top: 3px;
+        margin: 12px auto;
+
+        .fas {
+            margin-left: 10px;
+            margin-top: 2px;
+            margin-right: 10px;
         }
     }
-    .blocdescri {
-        width: 430px;
-        margin: auto;
-        border-radius: .25rem;
-        background-clip: border-box;
-        border: 1px solid rgba(0,0,0,.125);
-        margin-bottom: 10px;
-    
-        .descri-titre {
-            padding: 0.2rem 0 0 0.5rem;
-            margin-bottom: 0;
-            background-image: linear-gradient(90deg, rgb(43, 77, 130),rgb(40, 144, 172));
-            color: white;
-            border-bottom: 1px solid rgba(0,0,0,.125);
-            font-family: 'Neucha', cursive;
-            border-radius: .25rem .25rem 0 0;
-            line-height: 17px;
-            font-size: 15px;
+    .perso {
+        display: flex;
+        width: 415px;
+        margin: 12px auto;
+        justify-content: space-between;
+        padding: 2px 0 1px;
+
+        .sprite {
+            border-radius: 5px;
+            border: solid 1px $color-black;
+            width: 100px;
+            justify-content: center;
+
+            &:hover {
+                -webkit-transition: 2s; 
+                transition: 2s;
+                -ms-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg); 
+                transform: rotate(360deg);
+                -webkit-filter: grayscale(100%);filter: grayscale(100%);
+                -webkit-transition: 2s;
+                transition: 2s;
+            }
         }
+
+        .perso-infos {
+            height: 102px;
+            width: 300px;
+            overflow: auto;
+            border-radius: 5px;
+            border: solid 1px $color-black;
+            padding: 5px 5px;
+            font-size: 11px;
+
+            span {
+                color: #2890ac;
+            }
+        }
+    }
+
+    .blocdescri {
+        width: 415px;
+        margin: 15px auto;
+        background-clip: border-box;
+        padding: 2px 0 1px;
 
         .descri-corps {
             flex: 1 1 auto;
-            height: 100px;
+            height: 228px;
             overflow: auto;
-            padding: .50rem .50rem .25rem .50rem;
+            padding: 5px 10px 5px 5px;
             font-size:11px;
             text-align: justify;
-            background-color: white;
+            border-radius: 10px;
+            border: 1px solid $color-black;
+
+            .titre {
+                color: darkblue;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
 
             .perso-ava {
                 text-align:right;
                 font-size:9px;
                 margin-top: -5px;
             }
+
+            .nope {
+                filter: $color-no;
+            }
+
+            .arenebadge {
+                padding: 0 5px 0 0;
+            }
         }
     }
-    .grid-tc {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 5px;
-        grid-auto-rows: minmax(50px, auto);
-        width: 430px;
-        margin:5px auto;
+    
+    .bloc-card {
+        display: flex;
+        width: 420px;
+        margin: 5px auto 15px;
+        justify-content: space-between;
 
-        .badge-arene {
-            grid-column: 1 / 3;
-            grid-row: 1;
-            width: 270px;
-            border-radius: .25rem;
-            background-clip: border-box;
-            border: 1px solid rgba(0,0,0,.125);
-            margin-bottom: 10px;
+        .infos {
+            width: 185px;
+            border-radius: 10px;
+            border: 1px solid $color-black;
+            padding: 5px;
+            font-size:11px;
+            text-align: justify;
+            height: 122px;
+            overflow: auto;
 
-            .badge-titre {
-                padding: 0.2rem 0 0 0.5rem;
-                margin-bottom: 0;
-                background-image: linear-gradient(90deg, rgb(43, 77, 130),rgb(40, 144, 172));
-                color: white;
-                border-bottom: 1px solid rgba(0,0,0,.125);
-                font-family: 'Neucha', cursive;
-                border-radius: .25rem .25rem 0 0;
-                line-height: 17px;
-                font-size: 15px;
+            a {
+                margin-left: 12px;
             }
 
-            .badge-corps {
-                flex: 1 1 auto;
-                height: 65px;
-                padding: .50rem;
-                font-size:11px;
-                line-height: 10px;
-                text-align: justify;
-                background-color: white;
-
-                .badge-text {
-                    margin-bottom: 0;
-                }
-
-                .bloc-arene {
-                    margin-left: 6px;
-
-                    img {
-                        margin-top: -5px;
-                        margin-right: 2px;
-                        width: 14px;
-                    }
-
-                    .bad2 {
-                        margin-left: 11px;
-                    }
-
-                    .nope {
-                        -webkit-filter: grayscale(100%);
-                        filter: grayscale(100%);
-                    }
-                }
-
-                .bloc-arene2 {
-                    margin-left: -2px;
-
-                    img {
-                        margin-top: -1px;
-                        margin-right: 4px;
-                        width: 14px;
-                    }
-
-                    .bad2 {
-                        margin-left: 10px;
-                    }
-
-                    .bad3 {
-                        margin-right:3px;
-                    }
-
-                    .nope {
-                        -webkit-filter: grayscale(100%);
-                        filter: grayscale(100%);
-                    }
-                }
-
-                .bloc-arene3 {
-                    margin-left: 15px;
-
-                    img {
-                        margin-left: 2px;
-                        margin-right: 4px;
-                        width: 20px;
-                    }
-
-                    .nope {
-                        -webkit-filter: grayscale(100%);
-                        filter: grayscale(100%);
-                    }
-                }
+            hr {
+                margin-top: 8px;
+                margin-bottom: 8px;
+                border-color: $color-main;
             }
 
-        }
-
-        .date-cs {
-            grid-column: 3;
-            grid-row: 1/3;
-            width: 150px;
-            border-radius: .25rem;
-            background-clip: border-box;
-            border: 1px solid rgba(0,0,0,.125);
-
-            .date-cs-titre {
-                padding: 0.2rem 0 0 0.5rem;
-                margin-bottom: 0;
-                background-image: linear-gradient(90deg, rgb(43, 77, 130),rgb(40, 144, 172));
-                color: white;
-                border-bottom: 1px solid rgba(0,0,0,.125);
-                font-family: 'Neucha', cursive;
-                border-radius: .25rem .25rem 0 0;
-                line-height: 17px;
-                font-size: 15px;
+            p {
+                margin: 0;
+                font-style: italic;
             }
 
-            .date-cs-corps {
-                flex: 1 1 auto;
-                height: 158px;
-                padding: 5px 10px;
-                font-size:11px;
-                line-height:22px;
-                text-align: justify;
-                background-color: white;
-
-                .date-cs-text {
-                    margin-bottom: 0;
-                }
+            .title {
+                font-weight: lighter;
+                font-style: italic;
             }
 
-        }
+            a {
+                color: darkblue;
 
-        .banque {
-            grid-column: 1;
-            grid-row: 2;
-            width: 120px;
-            border-radius: .25rem;
-            background-clip: border-box;
-            border: 1px solid rgba(0,0,0,.125);
-
-            .banque-titre {
-                padding: 0.2rem 0 0 0.5rem;
-                margin-bottom: 0;
-                background-image: linear-gradient(90deg, rgb(43, 77, 130),rgb(40, 144, 172));
-                color: white;
-                border-bottom: 1px solid rgba(0,0,0,.125);
-                font-family: 'Neucha', cursive;
-                border-radius: .25rem .25rem 0 0;
-                line-height: 17px;
-                font-size: 15px;
-            }
-
-            .banque-corps {
-                flex: 1 1 auto;
-                height: 55px;
-                padding: 0 5px;
-                font-size:11px;
-                line-height:20px;
-                text-align: justify;
-                background-color: white;
-
-                .banque-text {
-                    margin-bottom: 0;
-
-                    span {
-                        margin-left: 55px;
-                        font-style: italic;
-                    }
+                &:hover, &:focus {
+                    text-decoration: none;
+                    color: lightpink;
                 }
             }
         }
 
-        .date-obj {
-            grid-column: 2;
-            grid-row: 2;
-            width: 135px;
-            border-radius: .25rem;
-            background-clip: border-box;
-            border: 1px solid rgba(0,0,0,.125);
-            margin-right: 5px;
+        .img-card {
+            width: 225px;
 
-            .date-obj-titre {
-                padding: 0.2rem 0 0 0.5rem;
-                margin-bottom: 0;
-                background-image: linear-gradient(90deg, rgb(43, 77, 130),rgb(40, 144, 172));
-                color: white;
-                border-bottom: 1px solid rgba(0,0,0,.125);
-                font-family: 'Neucha', cursive;
-                border-radius: .25rem .25rem 0 0;
-                line-height: 17px;
-                font-size: 15px;
+            img{
+                border-radius: 10px;
+                border: 1px solid $color-black;
             }
-
-            .date-obj-corps {
-                flex: 1 1 auto;
-                height: 55px;
-                padding: 0 5px;
-                font-size:11px;
-                line-height:18px;
-                text-align: justify;
-                background-color: white;
-
-                .date-obj-text {
-                    margin-bottom: 0;
-                }
-            }
-
         }
     }
     /* FIN DE LA PARTIE CONCERNANT LES INFOS GENERALES SUR LE PERSONNAGE */
 
-    /* DEBUT DE LA PARTIE CONCERNANT L'INVENTAIRE */
-
-    /* Inventaire */
-    .Inventaire {
-        clear:both;
-        width:445px; 
-        margin: 15px auto;
-
-        input[type=radio] {
-            display:none;
-
-            &:checked + label {
-                background-image: linear-gradient(90deg, rgb(43, 77, 130),rgb(40, 144, 172));
-                color: white;
-            }
-        }
-
-        label {
-            width:56px; 
-            height:20px;
-            padding: 1px 0;
-            border: 1px solid lightgrey;
-            color: grey;
-            cursor: pointer;
-            text-align:center;
-            font-family: 'Sirin Stencil', cursive;
-            font-size:14px;
-            line-height: 15px;
-            border-radius: 5px;
-            margin-left:2px;
-            background-color: white;
-
-            &:first-of-type {
-                margin-left:4px;
-            }
-        }
-
-    }
-
-    .contenu-sac {
-        display: none;
-        width: 435px; 
-        height: 150px;
-        padding: 5px;
-        border: 1px solid lightgrey;
-        border-radius : 5px;
-        color: black;
-        overflow: auto;
-        line-height : 22px;
-        font-family: 'PT Sans', sans-serif;
-        font-size:10px;
-        letter-spacing: 3px;
-        background-color: white;
-
-        img {
-            width: 25px;
-            margin-right: 5px;
-            margin-top: -3px;
-        }
-
-        a {
-            text-decoration: none;
-            color: steelblue;
-        }
-
-    }
-
-    #balls:checked ~ #c_balls, 
-    #soins:checked ~ #c_soins, 
-    #rare:checked ~ #c_rare, 
-    #pierre:checked ~ #c_pierre, 
-    #ctcs:checked ~ #c_ctcs, 
-    #baies:checked ~ #c_baies, 
-    #etho:checked ~ #c_etho { display:inline-block;}
-
-    .space_o {
-    padding-left:5px;
-    }
-    /* Obtention / Utilisation / CEIR */
-        .Obtention {
-            clear:both;
-            width:445px; 
-            margin: 15px auto 0 auto;
-    
-            input[type=radio] {
-                display:none;
-    
-                &:checked + label {
-                    background-image: linear-gradient(90deg, rgb(43, 77, 130),rgb(40, 144, 172));
-                    color: white;
-                }
-            }
-
-            label {
-                width:104px; 
-                height:20px;
-                padding: 1px 0;
-                border: 1px solid lightgrey;
-                color: grey;
-                cursor: pointer;
-                text-align: center;
-                font-family: 'Sirin Stencil', cursive;
-                font-size:14px;
-                line-height: 15px;
-                border-radius: 5px;
-                margin-left:2px;
-                background-color: white;
-            }
-    
-        }
-
-        .contenu-obtention {
-            display: none;
-            width: 435px; 
-            height: 180px;
-            padding: 5px;
-            border: 1px solid lightgrey;
-            border-radius : 5px;
-            color: black;
-            overflow: auto;
-            line-height : 22px;
-            font-family: 'PT Sans', sans-serif;
-            font-size:10px;
-            letter-spacing: 3px;
-            background-color: white;
-    
-            img {
-                width: 25px;
-                margin-right: 5px;
-                margin-top: -3px;
-            }
-        }
-        .contenu-obtention a {
-        text-decoration: none;
-        color: steelblue;
-        }
-    
-        #obt:checked ~ #c_obt, 
-        #util:checked ~ #c_util,
-        #proj:checked ~ #c_proj, 
-        #ceir:checked ~ #c_ceir { 
-            display:inline-block;
-        }
-    
-        .space_o {
-        padding-left:5px;
-        }
-
-    /* FIN DE LA PARTIE CONCERNANT L'INVENTAIRE */
-
     /* DEBUT DE LA PARTIE CONCERNANT LES POKEMONS */
 
     .content-pkmn {
-        width: 445px;
+        width: 420px;
         margin: 10px auto;
 
         .nav-link {
@@ -541,7 +278,7 @@ body {
             margin-top: 2px;
 
             &.active {
-                border-bottom: solid 2px #2890ac;
+                border-bottom: solid 2px $color-main;
                 background-color: transparent;
                 border-radius: 15px;
             }
@@ -549,17 +286,16 @@ body {
 
         .nav {
             justify-content: center;
-            height: 85px;
+            height: 80px;
             overflow: auto;
-            border: solid 1px lightgrey;
+            border: solid 1px $color-black;
             border-radius: 5px;
             padding: 5px 0;
-            background-color: white;
         }
         .grid-pkmn {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-gap: 10px;
+            grid-gap: 20px;
             grid-auto-rows: minmax(10px, auto);
 
             .pkmn-espece {
@@ -572,10 +308,10 @@ body {
                 font-family: "Neucha", cursive;
                 letter-spacing: 1px;
                 text-align: center;
-                background-image: linear-gradient(90deg, #2b4d82, #2890ac);
+                background-image: $color-degrade;
                 border-radius: 10px;
                 padding-top: 3px;
-                margin: -5px 2px auto 2px;
+                margin: 0 2px auto 2px;
 
                 .fas {
                     margin-left: 10px;
@@ -587,20 +323,19 @@ body {
                     height: 17px;
                     width: 19px;
                     margin: 2px 0 2px 10px;
-                    border: solid 1px white;
+                    border: solid 1px $color-black;
                     border-radius: 10px;
                 }
             }
 
             .sprite {
                 border-radius: 5px;
-                border: solid 1px lightgrey;
+                border: solid 1px $color-black;
                 width: 102px;
                 display: flex;
                 justify-content: center;
                 grid-column: 1;
                 grid-row: 2;
-                background-color: white;
             }
 
             .pkmn-infos {
@@ -609,10 +344,9 @@ body {
                 grid-column: 2/5;
                 grid-row: 2;
                 border-radius: 5px;
-                border: solid 1px lightgrey;
+                border: solid 1px $color-black;
                 padding: 6px 5px;
                 font-size: 11px;
-                background-color: white;
 
                 span {
                     color: #2890ac;
@@ -623,13 +357,12 @@ body {
                 grid-column: 1/3;
                 grid-row: 3;
                 border-radius: 5px;
-                border: solid 1px lightgrey;
+                border: solid 1px $color-black;
                 font-size: 10px;
-                height: 165px;
+                height: 160px;
                 overflow: auto;
                 letter-spacing: 1px;
                 padding: 0 0 2px 6px;
-                background-color: white;
 
                 div {
                     color: #63b3d9;
@@ -639,7 +372,7 @@ body {
                 }
 
                 span {
-                    color: #2890ac;
+                    color: $color-main;
                 }
             }
 
@@ -647,15 +380,14 @@ body {
                 grid-column: 3/5;
                 grid-row: 3;
                 border-radius: 5px;
-                border: solid 1px lightgrey;
+                border: solid 1px $color-black;
                 padding: 0 5px;
-                height: 165px;
+                height: 160px;
                 overflow: auto;
-                background-color: white;
 
                 div {
                     &:first-of-type, &:last-of-type {
-                        color: #63b3d9;
+                        color: $color-main;
                         font-size: 11px;
                         text-transform: uppercase;
                         text-align:center;
@@ -693,74 +425,208 @@ body {
                 grid-column: 1/5;
                 grid-row: 4;
                 border-radius: 5px;
-                border: solid 1px lightgrey;
-                height: 55px;
-                padding: 8px 10px;
+                border: solid 1px $color-black;
+                height: 80px;
+                padding: 8px 15px;
                 overflow: auto;
                 letter-spacing: 6px;
-                background-color: white;
-                color: #63b3d9;
-                font-size: 10px;
+                color: $color-main;
+                font-size: 18px;
                 text-transform: uppercase;
 
                 img {
                     margin-left: 5px;
-                    margin-top: -4px;
+                    margin-top: -2px;
                 }
             }
         }
 
     }
+    /* FIN DE LA PARTIE CONCERNANT LES POKEMONS */
 
-    /* DEBUT DE LA PARTIE CONCERNANT LES POKEMONS */
+    /* DEBUT DE LA PARTIE CONCERNANT L'INVENTAIRE */
 
-    /* DEBUT DE LA PARTIE CONCERNANT LES CARDS */
-    .pokecard {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 5px;
-        grid-auto-rows: minmax(50px, auto);
-        width: 465px;
-        margin:5px auto;
+    /* Inventaire */
+    .Inventaire {
+        clear:both;
+        width:440px;
+        background-clip: border-box;
 
-        .coordi-card {
-            grid-column: 1;
-            grid-row: 1;
+        input[type=radio] {
+            display:none;
 
-            img {
-                border-radius:5px;
+            &:checked + label {
+                background-image: $color-degrade;
+                color: white;
             }
         }
 
-        .coordi-text {
-            grid-column: 1;
-            grid-row: 2;
-            font-size:12px;
-            font-family: "Neucha", cursive;
-            letter-spacing: 2px;
+        label {
+            width:53px; 
+            height:20px;
+            padding: 1px 0;
+            border: 1px solid $color-black;
+            color: grey;
+            cursor: pointer;
             text-align:center;
+            font-family: 'Sirin Stencil', cursive;
+            font-size:14px;
+            line-height: 15px;
+            border-radius: 5px;
+
+            &:first-of-type {
+                margin-left:25px;
+            }
         }
 
-        .elite-card {
-            grid-column: 2;
-            grid-row: 1;
+    }
+
+    .contenu-sac {
+        display: none;
+        width: 410px; 
+        height: 200px;
+        padding: 5px;
+        border: 1px solid $color-black;
+        border-radius : 5px;
+        color: black;
+        overflow: auto;
+        line-height : 22px;
+        font-family: 'PT Sans', sans-serif;
+        font-size:10px;
+        letter-spacing: 3px;
+        margin: 0 18px;
+
+        img {
+            width: 25px;
+            margin-right: 5px;
+            margin-top: -3px;
         }
 
-        .elite-text {
-            grid-column: 2;
-            grid-row: 2;
+        a {
+            text-decoration: none;
+            color: $color-main;
         }
 
-        .c-card {
-            grid-column: 1/3;
-            grid-row: 3;
-            margin:auto;
+    }
+
+    #balls:checked ~ #c_balls, 
+    #soins:checked ~ #c_soins, 
+    #rare:checked ~ #c_rare, 
+    #pierre:checked ~ #c_pierre, 
+    #ctcs:checked ~ #c_ctcs, 
+    #baies:checked ~ #c_baies, 
+    #etho:checked ~ #c_etho { display:inline-block;}
+
+    .space_o {
+    padding-left:5px;
+    }
+    /* Obtention / Utilisation / CEIR */
+        .Obtention {
+            clear:both;
+            width:445px; 
+            margin: 20px auto 0 auto;
+    
+            input[type=radio] {
+                display:none;
+    
+                &:checked + label {
+                    background-image: $color-degrade;
+                    color: white;
+                }
+            }
+
+            label {
+                width:95px; 
+                height:20px;
+                padding: 1px 0;
+                border: 1px solid $color-black;
+                color: grey;
+                cursor: pointer;
+                text-align: center;
+                font-family: 'Sirin Stencil', cursive;
+                font-size:14px;
+                line-height: 15px;
+                border-radius: 5px;
+                margin-left:2px;
+
+                &:first-of-type {
+                    margin-left:25px;
+                }
+            }
+    
         }
 
-        .ccard-text {
-            grid-column: 1/3;
-            grid-row: 4;
+        .contenu-obtention {
+            display: none;
+            width: 410px; 
+            height: 200px;
+            padding: 5px;
+            border: 1px solid $color-black;
+            border-radius : 5px;
+            color: black;
+            overflow: auto;
+            line-height : 22px;
+            font-family: 'PT Sans', sans-serif;
+            font-size:10px;
+            letter-spacing: 3px;
+            margin: 0 18px;
+    
+            img {
+                width: 25px;
+                margin-right: 5px;
+                margin-top: -3px;
+            }
+        }
+        .contenu-obtention a {
+        text-decoration: none;
+        color: $color-main;
+        }
+    
+        #obt:checked ~ #c_obt, 
+        #util:checked ~ #c_util,
+        #proj:checked ~ #c_proj, 
+        #ceir:checked ~ #c_ceir { 
+            display:inline-block;
+        }
+    
+        .space_o {
+        padding-left:5px;
+        }
+
+    /* FIN DE LA PARTIE CONCERNANT L'INVENTAIRE */
+
+    /* PARTIE SBIRE */
+    .pkmnSbire {
+        margin: 15px;
+    }
+
+    .descri-mission {
+        flex: 1 1 auto;
+        height: 226px;
+        overflow: auto;
+        padding: 5px 10px 5px 5px;
+        font-size:11px;
+        text-align: justify;
+        border-radius: 10px;
+        border: 1px solid $color-black;
+
+        .titre {
+            color: $color-main;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        .validate {
+            color: $color-validate;
+        }
+
+        .fail {
+            color: $color-fail;
+        }
+
+        .encours {
+            color: $color-progress;
         }
     }
-    /* FIN DE LA PARTIE CONCERNANT LES CARDS */
+    /* FIN PARTIE SBIRE */
 }

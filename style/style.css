@@ -1,25 +1,26 @@
+/* VARIABLES */
 body {
-  max-height: 400px;
   background-color: transparent;
   font-size: 14px;
   max-width: 596px;
+  min-height: 550px;
 }
 
 /* PARTIE SIDEBAR */
 #kaktus-sidebar {
   width: 135px;
-  height: 500px;
+  height: 550px;
   left: 0.5%;
   top: 1.5%;
   position: fixed;
   border-radius: 10%;
 }
 #kaktus-sidebar img {
-  height: 150px;
+  height: 200px;
   width: 135px;
   border-radius: 10%;
-  border: solid 3px rgb(43, 77, 130);
-  margin-bottom: 5%; /* Safari 3.1 to 6.0 */
+  border: solid 2px rgb(0, 0, 0);
+  margin-bottom: 15px; /* Safari 3.1 to 6.0 */
   transition: 2s;
 }
 #kaktus-sidebar img:hover {
@@ -33,15 +34,14 @@ body {
   flex-wrap: wrap;
 }
 #kaktus-sidebar .navigation .blc-onglets {
-  width: 140px;
-  text-align: justify;
+  width: 135px;
 }
 #kaktus-sidebar .navigation .blc-onglets a {
-  color: rgb(40, 144, 172);
+  color: rgb(25, 25, 112);
   text-decoration: none;
 }
 #kaktus-sidebar .navigation .blc-onglets a:hover {
-  color: darkslategray;
+  color: rgb(0, 0, 0);
 }
 #kaktus-sidebar .navigation .blc-onglets span {
   font-size: 11px;
@@ -49,21 +49,20 @@ body {
 }
 #kaktus-sidebar .navigation .blc-onglets .pills-link {
   display: block;
-  width: 115px;
-  padding: 3px 2px;
-  border: solid 1px darkslategrey;
-  border-radius: 10%;
-  margin: 3% auto;
-  background-color: white;
+  width: 135px;
+  padding: 4px 10px;
+  border: solid 1px rgb(0, 0, 0);
+  border-radius: 20px;
+  margin: 3.4% auto;
 }
 #kaktus-sidebar .navigation .blc-onglets .active {
   color: #fff !important;
-  background-color: rgb(40, 144, 172);
+  background-color: rgb(25, 25, 112);
 }
 #kaktus-sidebar .navigation .blc-onglets .fas, #kaktus-sidebar .navigation .blc-onglets .far {
   margin-right: 7px;
   margin-left: 1px;
-  font-size: 14px;
+  font-size: 12px;
 }
 #kaktus-sidebar .navigation .blc-onglets .fab {
   margin-right: 10px;
@@ -78,385 +77,149 @@ body {
 .content-tc {
   position: absolute;
   left: 150px;
-  top: 3px;
-  border-radius: 5%;
-  width: 445px;
-  padding: 1%;
+  width: 455px;
+  padding: 8px 5px 5px 5px;
   /* FIN DE LA PARTIE GENERALE DES CONTENUS */
   /* DEBUT DE LA PARTIE CONCERNANT LES INFORMATIONS GENERALES SUR LE PERSONNAGE */
   /* FIN DE LA PARTIE CONCERNANT LES INFOS GENERALES SUR LE PERSONNAGE */
+  /* DEBUT DE LA PARTIE CONCERNANT LES POKEMONS */
+  /* FIN DE LA PARTIE CONCERNANT LES POKEMONS */
   /* DEBUT DE LA PARTIE CONCERNANT L'INVENTAIRE */
   /* Inventaire */
   /* Obtention / Utilisation / CEIR */
   /* FIN DE LA PARTIE CONCERNANT L'INVENTAIRE */
-  /* DEBUT DE LA PARTIE CONCERNANT LES POKEMONS */
-  /* DEBUT DE LA PARTIE CONCERNANT LES POKEMONS */
-  /* DEBUT DE LA PARTIE CONCERNANT LES CARDS */
-  /* FIN DE LA PARTIE CONCERNANT LES CARDS */
+  /* PARTIE SBIRE */
+  /* FIN PARTIE SBIRE */
 }
-.content-tc .tc-name {
-  font-size: 35px;
-  color: rgb(43, 77, 130);
-  text-align: center;
-  font-family: "Fredericka the Great", cursive;
-  text-shadow: 1px 1px 1px rgb(40, 144, 172);
-  margin-bottom: 10px;
-  letter-spacing: 4px;
-  margin-top: 10px;
-}
-.content-tc .tipspoint {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.content-tc .tipspoint .badge {
-  padding: 3px;
-  margin: 5px 3px;
-  width: 85px;
+.content-tc .perso-ident {
+  justify-content: center;
+  width: 420px;
+  font-size: 15px;
+  color: white;
   font-family: "Neucha", cursive;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  text-align: center;
   background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
+  border-radius: 10px;
+  padding-top: 3px;
+  margin: 12px auto;
+}
+.content-tc .perso-ident .fas {
+  margin-left: 10px;
+  margin-top: 2px;
+  margin-right: 10px;
+}
+.content-tc .perso {
+  display: flex;
+  width: 415px;
+  margin: 12px auto;
+  justify-content: space-between;
+  padding: 2px 0 1px;
+}
+.content-tc .perso .sprite {
+  border-radius: 5px;
+  border: solid 1px rgb(0, 0, 0);
+  width: 100px;
+  justify-content: center;
+}
+.content-tc .perso .sprite:hover {
+  transition: 2s;
+  transform: rotate(360deg);
+  filter: grayscale(100%);
+  transition: 2s;
+}
+.content-tc .perso .perso-infos {
+  height: 102px;
+  width: 300px;
+  overflow: auto;
+  border-radius: 5px;
+  border: solid 1px rgb(0, 0, 0);
+  padding: 5px 5px;
+  font-size: 11px;
+}
+.content-tc .perso .perso-infos span {
+  color: #2890ac;
 }
 .content-tc .blocdescri {
-  width: 430px;
-  margin: auto;
-  border-radius: 0.25rem;
+  width: 415px;
+  margin: 15px auto;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  margin-bottom: 10px;
-}
-.content-tc .blocdescri .descri-titre {
-  padding: 0.2rem 0 0 0.5rem;
-  margin-bottom: 0;
-  background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
-  color: white;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  font-family: "Neucha", cursive;
-  border-radius: 0.25rem 0.25rem 0 0;
-  line-height: 17px;
-  font-size: 15px;
+  padding: 2px 0 1px;
 }
 .content-tc .blocdescri .descri-corps {
   flex: 1 1 auto;
-  height: 100px;
+  height: 228px;
   overflow: auto;
-  padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  padding: 5px 10px 5px 5px;
   font-size: 11px;
   text-align: justify;
-  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+.content-tc .blocdescri .descri-corps .titre {
+  color: darkblue;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 .content-tc .blocdescri .descri-corps .perso-ava {
   text-align: right;
   font-size: 9px;
   margin-top: -5px;
 }
-.content-tc .grid-tc {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-  grid-auto-rows: minmax(50px, auto);
-  width: 430px;
-  margin: 5px auto;
-}
-.content-tc .grid-tc .badge-arene {
-  grid-column: 1/3;
-  grid-row: 1;
-  width: 270px;
-  border-radius: 0.25rem;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  margin-bottom: 10px;
-}
-.content-tc .grid-tc .badge-arene .badge-titre {
-  padding: 0.2rem 0 0 0.5rem;
-  margin-bottom: 0;
-  background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
-  color: white;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  font-family: "Neucha", cursive;
-  border-radius: 0.25rem 0.25rem 0 0;
-  line-height: 17px;
-  font-size: 15px;
-}
-.content-tc .grid-tc .badge-arene .badge-corps {
-  flex: 1 1 auto;
-  height: 65px;
-  padding: 0.5rem;
-  font-size: 11px;
-  line-height: 10px;
-  text-align: justify;
-  background-color: white;
-}
-.content-tc .grid-tc .badge-arene .badge-corps .badge-text {
-  margin-bottom: 0;
-}
-.content-tc .grid-tc .badge-arene .badge-corps .bloc-arene {
-  margin-left: 6px;
-}
-.content-tc .grid-tc .badge-arene .badge-corps .bloc-arene img {
-  margin-top: -5px;
-  margin-right: 2px;
-  width: 14px;
-}
-.content-tc .grid-tc .badge-arene .badge-corps .bloc-arene .bad2 {
-  margin-left: 11px;
-}
-.content-tc .grid-tc .badge-arene .badge-corps .bloc-arene .nope {
+.content-tc .blocdescri .descri-corps .nope {
   filter: grayscale(100%);
 }
-.content-tc .grid-tc .badge-arene .badge-corps .bloc-arene2 {
-  margin-left: -2px;
+.content-tc .blocdescri .descri-corps .arenebadge {
+  padding: 0 5px 0 0;
 }
-.content-tc .grid-tc .badge-arene .badge-corps .bloc-arene2 img {
-  margin-top: -1px;
-  margin-right: 4px;
-  width: 14px;
+.content-tc .bloc-card {
+  display: flex;
+  width: 420px;
+  margin: 5px auto 15px;
+  justify-content: space-between;
 }
-.content-tc .grid-tc .badge-arene .badge-corps .bloc-arene2 .bad2 {
-  margin-left: 10px;
-}
-.content-tc .grid-tc .badge-arene .badge-corps .bloc-arene2 .bad3 {
-  margin-right: 3px;
-}
-.content-tc .grid-tc .badge-arene .badge-corps .bloc-arene2 .nope {
-  filter: grayscale(100%);
-}
-.content-tc .grid-tc .badge-arene .badge-corps .bloc-arene3 {
-  margin-left: 15px;
-}
-.content-tc .grid-tc .badge-arene .badge-corps .bloc-arene3 img {
-  margin-left: 2px;
-  margin-right: 4px;
-  width: 20px;
-}
-.content-tc .grid-tc .badge-arene .badge-corps .bloc-arene3 .nope {
-  filter: grayscale(100%);
-}
-.content-tc .grid-tc .date-cs {
-  grid-column: 3;
-  grid-row: 1/3;
-  width: 150px;
-  border-radius: 0.25rem;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-}
-.content-tc .grid-tc .date-cs .date-cs-titre {
-  padding: 0.2rem 0 0 0.5rem;
-  margin-bottom: 0;
-  background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
-  color: white;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  font-family: "Neucha", cursive;
-  border-radius: 0.25rem 0.25rem 0 0;
-  line-height: 17px;
-  font-size: 15px;
-}
-.content-tc .grid-tc .date-cs .date-cs-corps {
-  flex: 1 1 auto;
-  height: 158px;
-  padding: 5px 10px;
+.content-tc .bloc-card .infos {
+  width: 185px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 5px;
   font-size: 11px;
-  line-height: 22px;
   text-align: justify;
-  background-color: white;
+  height: 122px;
+  overflow: auto;
 }
-.content-tc .grid-tc .date-cs .date-cs-corps .date-cs-text {
-  margin-bottom: 0;
+.content-tc .bloc-card .infos a {
+  margin-left: 12px;
 }
-.content-tc .grid-tc .banque {
-  grid-column: 1;
-  grid-row: 2;
-  width: 120px;
-  border-radius: 0.25rem;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+.content-tc .bloc-card .infos hr {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-color: rgb(25, 25, 112);
 }
-.content-tc .grid-tc .banque .banque-titre {
-  padding: 0.2rem 0 0 0.5rem;
-  margin-bottom: 0;
-  background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
-  color: white;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  font-family: "Neucha", cursive;
-  border-radius: 0.25rem 0.25rem 0 0;
-  line-height: 17px;
-  font-size: 15px;
-}
-.content-tc .grid-tc .banque .banque-corps {
-  flex: 1 1 auto;
-  height: 55px;
-  padding: 0 5px;
-  font-size: 11px;
-  line-height: 20px;
-  text-align: justify;
-  background-color: white;
-}
-.content-tc .grid-tc .banque .banque-corps .banque-text {
-  margin-bottom: 0;
-}
-.content-tc .grid-tc .banque .banque-corps .banque-text span {
-  margin-left: 55px;
+.content-tc .bloc-card .infos p {
+  margin: 0;
   font-style: italic;
 }
-.content-tc .grid-tc .date-obj {
-  grid-column: 2;
-  grid-row: 2;
-  width: 135px;
-  border-radius: 0.25rem;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  margin-right: 5px;
+.content-tc .bloc-card .infos .title {
+  font-weight: lighter;
+  font-style: italic;
 }
-.content-tc .grid-tc .date-obj .date-obj-titre {
-  padding: 0.2rem 0 0 0.5rem;
-  margin-bottom: 0;
-  background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
-  color: white;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  font-family: "Neucha", cursive;
-  border-radius: 0.25rem 0.25rem 0 0;
-  line-height: 17px;
-  font-size: 15px;
+.content-tc .bloc-card .infos a {
+  color: darkblue;
 }
-.content-tc .grid-tc .date-obj .date-obj-corps {
-  flex: 1 1 auto;
-  height: 55px;
-  padding: 0 5px;
-  font-size: 11px;
-  line-height: 18px;
-  text-align: justify;
-  background-color: white;
-}
-.content-tc .grid-tc .date-obj .date-obj-corps .date-obj-text {
-  margin-bottom: 0;
-}
-.content-tc .Inventaire {
-  clear: both;
-  width: 445px;
-  margin: 15px auto;
-}
-.content-tc .Inventaire input[type=radio] {
-  display: none;
-}
-.content-tc .Inventaire input[type=radio]:checked + label {
-  background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
-  color: white;
-}
-.content-tc .Inventaire label {
-  width: 56px;
-  height: 20px;
-  padding: 1px 0;
-  border: 1px solid lightgrey;
-  color: grey;
-  cursor: pointer;
-  text-align: center;
-  font-family: "Sirin Stencil", cursive;
-  font-size: 14px;
-  line-height: 15px;
-  border-radius: 5px;
-  margin-left: 2px;
-  background-color: white;
-}
-.content-tc .Inventaire label:first-of-type {
-  margin-left: 4px;
-}
-.content-tc .contenu-sac {
-  display: none;
-  width: 435px;
-  height: 150px;
-  padding: 5px;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  color: black;
-  overflow: auto;
-  line-height: 22px;
-  font-family: "PT Sans", sans-serif;
-  font-size: 10px;
-  letter-spacing: 3px;
-  background-color: white;
-}
-.content-tc .contenu-sac img {
-  width: 25px;
-  margin-right: 5px;
-  margin-top: -3px;
-}
-.content-tc .contenu-sac a {
+.content-tc .bloc-card .infos a:hover, .content-tc .bloc-card .infos a:focus {
   text-decoration: none;
-  color: steelblue;
+  color: lightpink;
 }
-.content-tc #balls:checked ~ #c_balls,
-.content-tc #soins:checked ~ #c_soins,
-.content-tc #rare:checked ~ #c_rare,
-.content-tc #pierre:checked ~ #c_pierre,
-.content-tc #ctcs:checked ~ #c_ctcs,
-.content-tc #baies:checked ~ #c_baies,
-.content-tc #etho:checked ~ #c_etho {
-  display: inline-block;
+.content-tc .bloc-card .img-card {
+  width: 225px;
 }
-.content-tc .space_o {
-  padding-left: 5px;
-}
-.content-tc .Obtention {
-  clear: both;
-  width: 445px;
-  margin: 15px auto 0 auto;
-}
-.content-tc .Obtention input[type=radio] {
-  display: none;
-}
-.content-tc .Obtention input[type=radio]:checked + label {
-  background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
-  color: white;
-}
-.content-tc .Obtention label {
-  width: 104px;
-  height: 20px;
-  padding: 1px 0;
-  border: 1px solid lightgrey;
-  color: grey;
-  cursor: pointer;
-  text-align: center;
-  font-family: "Sirin Stencil", cursive;
-  font-size: 14px;
-  line-height: 15px;
-  border-radius: 5px;
-  margin-left: 2px;
-  background-color: white;
-}
-.content-tc .contenu-obtention {
-  display: none;
-  width: 435px;
-  height: 180px;
-  padding: 5px;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  color: black;
-  overflow: auto;
-  line-height: 22px;
-  font-family: "PT Sans", sans-serif;
-  font-size: 10px;
-  letter-spacing: 3px;
-  background-color: white;
-}
-.content-tc .contenu-obtention img {
-  width: 25px;
-  margin-right: 5px;
-  margin-top: -3px;
-}
-.content-tc .contenu-obtention a {
-  text-decoration: none;
-  color: steelblue;
-}
-.content-tc #obt:checked ~ #c_obt,
-.content-tc #util:checked ~ #c_util,
-.content-tc #proj:checked ~ #c_proj,
-.content-tc #ceir:checked ~ #c_ceir {
-  display: inline-block;
-}
-.content-tc .space_o {
-  padding-left: 5px;
+.content-tc .bloc-card .img-card img {
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
 }
 .content-tc .content-pkmn {
-  width: 445px;
+  width: 420px;
   margin: 10px auto;
 }
 .content-tc .content-pkmn .nav-link {
@@ -465,23 +228,22 @@ body {
   margin-top: 2px;
 }
 .content-tc .content-pkmn .nav-link.active {
-  border-bottom: solid 2px #2890ac;
+  border-bottom: solid 2px rgb(25, 25, 112);
   background-color: transparent;
   border-radius: 15px;
 }
 .content-tc .content-pkmn .nav {
   justify-content: center;
-  height: 85px;
+  height: 80px;
   overflow: auto;
-  border: solid 1px lightgrey;
+  border: solid 1px rgb(0, 0, 0);
   border-radius: 5px;
   padding: 5px 0;
-  background-color: white;
 }
 .content-tc .content-pkmn .grid-pkmn {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-gap: 20px;
   grid-auto-rows: minmax(10px, auto);
 }
 .content-tc .content-pkmn .grid-pkmn .pkmn-espece {
@@ -494,10 +256,10 @@ body {
   font-family: "Neucha", cursive;
   letter-spacing: 1px;
   text-align: center;
-  background-image: linear-gradient(90deg, #2b4d82, #2890ac);
+  background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
   border-radius: 10px;
   padding-top: 3px;
-  margin: -5px 2px auto 2px;
+  margin: 0 2px auto 2px;
 }
 .content-tc .content-pkmn .grid-pkmn .pkmn-espece .fas {
   margin-left: 10px;
@@ -508,18 +270,17 @@ body {
   height: 17px;
   width: 19px;
   margin: 2px 0 2px 10px;
-  border: solid 1px white;
+  border: solid 1px rgb(0, 0, 0);
   border-radius: 10px;
 }
 .content-tc .content-pkmn .grid-pkmn .sprite {
   border-radius: 5px;
-  border: solid 1px lightgrey;
+  border: solid 1px rgb(0, 0, 0);
   width: 102px;
   display: flex;
   justify-content: center;
   grid-column: 1;
   grid-row: 2;
-  background-color: white;
 }
 .content-tc .content-pkmn .grid-pkmn .pkmn-infos {
   height: 102px;
@@ -527,10 +288,9 @@ body {
   grid-column: 2/5;
   grid-row: 2;
   border-radius: 5px;
-  border: solid 1px lightgrey;
+  border: solid 1px rgb(0, 0, 0);
   padding: 6px 5px;
   font-size: 11px;
-  background-color: white;
 }
 .content-tc .content-pkmn .grid-pkmn .pkmn-infos span {
   color: #2890ac;
@@ -539,13 +299,12 @@ body {
   grid-column: 1/3;
   grid-row: 3;
   border-radius: 5px;
-  border: solid 1px lightgrey;
+  border: solid 1px rgb(0, 0, 0);
   font-size: 10px;
-  height: 165px;
+  height: 160px;
   overflow: auto;
   letter-spacing: 1px;
   padding: 0 0 2px 6px;
-  background-color: white;
 }
 .content-tc .content-pkmn .grid-pkmn .stats-pkmn div {
   color: #63b3d9;
@@ -554,20 +313,19 @@ body {
   text-align: center;
 }
 .content-tc .content-pkmn .grid-pkmn .stats-pkmn span {
-  color: #2890ac;
+  color: rgb(25, 25, 112);
 }
 .content-tc .content-pkmn .grid-pkmn .atk-pkmn {
   grid-column: 3/5;
   grid-row: 3;
   border-radius: 5px;
-  border: solid 1px lightgrey;
+  border: solid 1px rgb(0, 0, 0);
   padding: 0 5px;
-  height: 165px;
+  height: 160px;
   overflow: auto;
-  background-color: white;
 }
 .content-tc .content-pkmn .grid-pkmn .atk-pkmn div:first-of-type, .content-tc .content-pkmn .grid-pkmn .atk-pkmn div:last-of-type {
-  color: #63b3d9;
+  color: rgb(25, 25, 112);
   font-size: 11px;
   text-transform: uppercase;
   text-align: center;
@@ -636,57 +394,169 @@ body {
   grid-column: 1/5;
   grid-row: 4;
   border-radius: 5px;
-  border: solid 1px lightgrey;
-  height: 55px;
-  padding: 8px 10px;
+  border: solid 1px rgb(0, 0, 0);
+  height: 80px;
+  padding: 8px 15px;
   overflow: auto;
   letter-spacing: 6px;
-  background-color: white;
-  color: #63b3d9;
-  font-size: 10px;
+  color: rgb(25, 25, 112);
+  font-size: 18px;
   text-transform: uppercase;
 }
 .content-tc .content-pkmn .grid-pkmn .rela-pkmn img {
   margin-left: 5px;
-  margin-top: -4px;
+  margin-top: -2px;
 }
-.content-tc .pokecard {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5px;
-  grid-auto-rows: minmax(50px, auto);
-  width: 465px;
-  margin: 5px auto;
+.content-tc .Inventaire {
+  clear: both;
+  width: 440px;
+  background-clip: border-box;
 }
-.content-tc .pokecard .coordi-card {
-  grid-column: 1;
-  grid-row: 1;
+.content-tc .Inventaire input[type=radio] {
+  display: none;
 }
-.content-tc .pokecard .coordi-card img {
+.content-tc .Inventaire input[type=radio]:checked + label {
+  background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
+  color: white;
+}
+.content-tc .Inventaire label {
+  width: 53px;
+  height: 20px;
+  padding: 1px 0;
+  border: 1px solid rgb(0, 0, 0);
+  color: grey;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Sirin Stencil", cursive;
+  font-size: 14px;
+  line-height: 15px;
   border-radius: 5px;
 }
-.content-tc .pokecard .coordi-text {
-  grid-column: 1;
-  grid-row: 2;
-  font-size: 12px;
-  font-family: "Neucha", cursive;
-  letter-spacing: 2px;
+.content-tc .Inventaire label:first-of-type {
+  margin-left: 25px;
+}
+.content-tc .contenu-sac {
+  display: none;
+  width: 410px;
+  height: 200px;
+  padding: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  color: black;
+  overflow: auto;
+  line-height: 22px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin: 0 18px;
+}
+.content-tc .contenu-sac img {
+  width: 25px;
+  margin-right: 5px;
+  margin-top: -3px;
+}
+.content-tc .contenu-sac a {
+  text-decoration: none;
+  color: rgb(25, 25, 112);
+}
+.content-tc #balls:checked ~ #c_balls,
+.content-tc #soins:checked ~ #c_soins,
+.content-tc #rare:checked ~ #c_rare,
+.content-tc #pierre:checked ~ #c_pierre,
+.content-tc #ctcs:checked ~ #c_ctcs,
+.content-tc #baies:checked ~ #c_baies,
+.content-tc #etho:checked ~ #c_etho {
+  display: inline-block;
+}
+.content-tc .space_o {
+  padding-left: 5px;
+}
+.content-tc .Obtention {
+  clear: both;
+  width: 445px;
+  margin: 20px auto 0 auto;
+}
+.content-tc .Obtention input[type=radio] {
+  display: none;
+}
+.content-tc .Obtention input[type=radio]:checked + label {
+  background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
+  color: white;
+}
+.content-tc .Obtention label {
+  width: 95px;
+  height: 20px;
+  padding: 1px 0;
+  border: 1px solid rgb(0, 0, 0);
+  color: grey;
+  cursor: pointer;
   text-align: center;
+  font-family: "Sirin Stencil", cursive;
+  font-size: 14px;
+  line-height: 15px;
+  border-radius: 5px;
+  margin-left: 2px;
 }
-.content-tc .pokecard .elite-card {
-  grid-column: 2;
-  grid-row: 1;
+.content-tc .Obtention label:first-of-type {
+  margin-left: 25px;
 }
-.content-tc .pokecard .elite-text {
-  grid-column: 2;
-  grid-row: 2;
+.content-tc .contenu-obtention {
+  display: none;
+  width: 410px;
+  height: 200px;
+  padding: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  color: black;
+  overflow: auto;
+  line-height: 22px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin: 0 18px;
 }
-.content-tc .pokecard .c-card {
-  grid-column: 1/3;
-  grid-row: 3;
-  margin: auto;
+.content-tc .contenu-obtention img {
+  width: 25px;
+  margin-right: 5px;
+  margin-top: -3px;
 }
-.content-tc .pokecard .ccard-text {
-  grid-column: 1/3;
-  grid-row: 4;
+.content-tc .contenu-obtention a {
+  text-decoration: none;
+  color: rgb(25, 25, 112);
+}
+.content-tc #obt:checked ~ #c_obt,
+.content-tc #util:checked ~ #c_util,
+.content-tc #proj:checked ~ #c_proj,
+.content-tc #ceir:checked ~ #c_ceir {
+  display: inline-block;
+}
+.content-tc .space_o {
+  padding-left: 5px;
+}
+.content-tc .pkmnSbire {
+  margin: 15px;
+}
+.content-tc .descri-mission {
+  flex: 1 1 auto;
+  height: 226px;
+  overflow: auto;
+  padding: 5px 10px 5px 5px;
+  font-size: 11px;
+  text-align: justify;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+.content-tc .descri-mission .titre {
+  color: rgb(25, 25, 112);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.content-tc .descri-mission .validate {
+  color: rgb(0, 179, 41);
+}
+.content-tc .descri-mission .fail {
+  color: rgb(138, 0, 0);
+}
+.content-tc .descri-mission .encours {
+  color: rgb(1, 122, 131);
 }/*# sourceMappingURL=style.css.map */
