@@ -90,6 +90,8 @@ body {
   /* FIN DE LA PARTIE CONCERNANT L'INVENTAIRE */
   /* PARTIE SBIRE */
   /* FIN PARTIE SBIRE */
+  /* PARTIE BOX */
+  /* FIN PARTIE BOX */
 }
 .content-tc .perso-ident {
   justify-content: center;
@@ -559,4 +561,22 @@ body {
 }
 .content-tc .descri-mission .encours {
   color: rgb(1, 122, 131);
+}
+.content-tc .wishlist {
+  height: 64px;
+  overflow: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 11px;
+}
+.content-tc .couveuse {
+  height: 95px;
+  overflow: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 11px;
+}
+.content-tc .couveuse span {
+  color: #2890ac;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */

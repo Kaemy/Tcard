@@ -629,4 +629,29 @@ $width-sidebar: 135px;
         }
     }
     /* FIN PARTIE SBIRE */
+
+    
+    /* PARTIE BOX */
+    .wishlist {
+        height: 64px;
+        overflow: auto;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 11px;
+    }
+
+    .couveuse {
+        height: 95px;
+        overflow: auto;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 11px;
+        
+
+        span {
+            color: #2890ac;
+            font-weight: 700;
+        }
+    }
+    /* FIN PARTIE BOX */
 }
