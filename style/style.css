@@ -236,7 +236,7 @@ body {
 }
 .content-tc .content-pkmn .nav {
   justify-content: center;
-  height: 100px;
+  height: 120px;
   overflow: auto;
   border: solid 1px rgb(0, 0, 0);
   border-radius: 5px;
@@ -245,7 +245,7 @@ body {
 .content-tc .content-pkmn .grid-pkmn {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 13px 20px;
   grid-auto-rows: minmax(10px, auto);
 }
 .content-tc .content-pkmn .grid-pkmn .pkmn-espece {

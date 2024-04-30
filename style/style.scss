@@ -286,7 +286,7 @@ $width-sidebar: 135px;
 
         .nav {
             justify-content: center;
-            height: 100px;
+            height: 120px;
             overflow: auto;
             border: solid 1px $color-black;
             border-radius: 5px;
@@ -295,7 +295,7 @@ $width-sidebar: 135px;
         .grid-pkmn {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-gap: 20px;
+            grid-gap: 13px 20px;
             grid-auto-rows: minmax(10px, auto);
 
             .pkmn-espece {
