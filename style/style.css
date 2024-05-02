@@ -2,13 +2,34 @@
 body {
   background-color: transparent;
   font-size: 14px;
-  max-width: 596px;
-  min-height: 550px;
+  max-width: 592px;
+  /*border: 1px solid red;*/
+  min-height: 565px;
+}
+
+.titre-part, .titre-part2 {
+  display: flex;
+  justify-content: center;
+  grid-column: 1/5;
+  grid-row: 1;
+  font-size: 15px;
+  color: white;
+  font-family: "Neucha", cursive;
+  letter-spacing: 1px;
+  background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
+  border-radius: 10px;
+  padding-top: 3px;
+  margin: 2px auto 11px;
+  width: 394px;
+}
+
+.titre-part2 {
+  margin: 11px auto 11px;
 }
 
 /* PARTIE SIDEBAR */
 #kaktus-sidebar {
-  width: 135px;
+  width: 180px;
   height: 550px;
   left: 0.5%;
   top: 1.5%;
@@ -17,10 +38,10 @@ body {
 }
 #kaktus-sidebar img {
   height: 200px;
-  width: 135px;
+  width: 180px;
   border-radius: 10%;
   border: solid 2px rgb(0, 0, 0);
-  margin-bottom: 15px; /* Safari 3.1 to 6.0 */
+  margin-bottom: 13px; /* Safari 3.1 to 6.0 */
   transition: 2s;
 }
 #kaktus-sidebar img:hover {
@@ -34,7 +55,7 @@ body {
   flex-wrap: wrap;
 }
 #kaktus-sidebar .navigation .blc-onglets {
-  width: 135px;
+  width: 180px;
 }
 #kaktus-sidebar .navigation .blc-onglets a {
   color: rgb(25, 25, 112);
@@ -44,20 +65,20 @@ body {
   color: rgb(0, 0, 0);
 }
 #kaktus-sidebar .navigation .blc-onglets span {
-  font-size: 11px;
+  font-size: 13px;
   text-transform: uppercase;
 }
 #kaktus-sidebar .navigation .blc-onglets .pills-link {
   display: block;
-  width: 135px;
+  width: 180px;
   padding: 4px 10px;
   border: solid 1px rgb(0, 0, 0);
   border-radius: 20px;
-  margin: 3.4% auto;
+  margin: 9px auto 10px;
 }
 #kaktus-sidebar .navigation .blc-onglets .active {
   color: #fff !important;
-  background-color: rgb(25, 25, 112);
+  background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
 }
 #kaktus-sidebar .navigation .blc-onglets .fas, #kaktus-sidebar .navigation .blc-onglets .far {
   margin-right: 7px;
@@ -76,7 +97,7 @@ body {
 /* DEBUT GENERAL DES CONTENUS */
 .content-tc {
   position: absolute;
-  left: 150px;
+  left: 165px;
   width: 455px;
   padding: 8px 5px 5px 5px;
   /* FIN DE LA PARTIE GENERALE DES CONTENUS */
@@ -85,17 +106,19 @@ body {
   /* DEBUT DE LA PARTIE CONCERNANT LES POKEMONS */
   /* FIN DE LA PARTIE CONCERNANT LES POKEMONS */
   /* DEBUT DE LA PARTIE CONCERNANT L'INVENTAIRE */
-  /* Inventaire */
-  /* Obtention / Utilisation / CEIR */
   /* FIN DE LA PARTIE CONCERNANT L'INVENTAIRE */
-  /* PARTIE SBIRE */
-  /* FIN PARTIE SBIRE */
+  /* PARTIE RPS */
+  /* FIN PARTIE RPS */
   /* PARTIE BOX */
   /* FIN PARTIE BOX */
+  /* DEBUT PARTIE CONTACTS */
+  /* FIN PARTIE CONTACTS */
+  /* DEBUT PARTIE SUR LES KDO */
+  /* DEBUT PARTIE SUR LES KDO */
 }
 .content-tc .perso-ident {
   justify-content: center;
-  width: 420px;
+  width: 392px;
   font-size: 15px;
   color: white;
   font-family: "Neucha", cursive;
@@ -113,7 +136,7 @@ body {
 }
 .content-tc .perso {
   display: flex;
-  width: 415px;
+  width: 395px;
   margin: 12px auto;
   justify-content: space-between;
   padding: 2px 0 1px;
@@ -132,25 +155,25 @@ body {
 }
 .content-tc .perso .perso-infos {
   height: 102px;
-  width: 300px;
+  width: 285px;
   overflow: auto;
-  border-radius: 5px;
+  border-radius: 10px;
   border: solid 1px rgb(0, 0, 0);
   padding: 5px 5px;
   font-size: 11px;
 }
 .content-tc .perso .perso-infos span {
-  color: #2890ac;
+  color: #00aeff;
 }
 .content-tc .blocdescri {
-  width: 415px;
-  margin: 15px auto;
+  width: 395px;
+  margin: 14px auto;
   background-clip: border-box;
   padding: 2px 0 1px;
 }
 .content-tc .blocdescri .descri-corps {
   flex: 1 1 auto;
-  height: 228px;
+  height: 251px;
   overflow: auto;
   padding: 5px 10px 5px 5px;
   font-size: 11px;
@@ -168,20 +191,14 @@ body {
   font-size: 9px;
   margin-top: -5px;
 }
-.content-tc .blocdescri .descri-corps .nope {
-  filter: grayscale(100%);
-}
-.content-tc .blocdescri .descri-corps .arenebadge {
-  padding: 0 5px 0 0;
-}
 .content-tc .bloc-card {
   display: flex;
-  width: 420px;
+  width: 400px;
   margin: 5px auto 15px;
   justify-content: space-between;
 }
 .content-tc .bloc-card .infos {
-  width: 185px;
+  width: 170px;
   border-radius: 10px;
   border: 1px solid rgb(0, 0, 0);
   padding: 5px;
@@ -191,7 +208,7 @@ body {
   overflow: auto;
 }
 .content-tc .bloc-card .infos a {
-  margin-left: 12px;
+  margin-left: 6px;
 }
 .content-tc .bloc-card .infos hr {
   margin-top: 8px;
@@ -201,6 +218,14 @@ body {
 .content-tc .bloc-card .infos p {
   margin: 0;
   font-style: italic;
+}
+.content-tc .bloc-card .infos .badges img {
+  width: 9%;
+  margin: 0 1px;
+}
+.content-tc .bloc-card .infos .badges img.noObtain {
+  filter: grayscale(100%);
+  opacity: 20%;
 }
 .content-tc .bloc-card .infos .title {
   font-weight: lighter;
@@ -221,8 +246,8 @@ body {
   border: 1px solid rgb(0, 0, 0);
 }
 .content-tc .content-pkmn {
-  width: 420px;
-  margin: 10px auto;
+  width: 394px;
+  margin: 4px auto;
 }
 .content-tc .content-pkmn .nav-link {
   display: block;
@@ -295,27 +320,27 @@ body {
   font-size: 11px;
 }
 .content-tc .content-pkmn .grid-pkmn .pkmn-infos span {
-  color: #2890ac;
+  color: #00aeff;
 }
 .content-tc .content-pkmn .grid-pkmn .stats-pkmn {
   grid-column: 1/3;
   grid-row: 3;
   border-radius: 5px;
   border: solid 1px rgb(0, 0, 0);
-  font-size: 10px;
-  height: 150px;
+  font-size: 11px;
+  height: 175px;
   overflow: auto;
   letter-spacing: 1px;
   padding: 0 0 2px 6px;
 }
 .content-tc .content-pkmn .grid-pkmn .stats-pkmn div {
-  color: #63b3d9;
-  font-size: 11px;
+  color: #00aeff;
+  font-size: 14px;
   text-transform: uppercase;
   text-align: center;
 }
 .content-tc .content-pkmn .grid-pkmn .stats-pkmn span {
-  color: rgb(25, 25, 112);
+  color: #00aeff;
 }
 .content-tc .content-pkmn .grid-pkmn .atk-pkmn {
   grid-column: 3/5;
@@ -323,12 +348,12 @@ body {
   border-radius: 5px;
   border: solid 1px rgb(0, 0, 0);
   padding: 0 5px;
-  height: 150px;
+  height: 175px;
   overflow: auto;
 }
 .content-tc .content-pkmn .grid-pkmn .atk-pkmn div:first-of-type, .content-tc .content-pkmn .grid-pkmn .atk-pkmn div:last-of-type {
-  color: rgb(25, 25, 112);
-  font-size: 11px;
+  color: #00aeff;
+  font-size: 14px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -411,7 +436,7 @@ body {
 }
 .content-tc .Inventaire {
   clear: both;
-  width: 440px;
+  width: 400px;
   background-clip: border-box;
 }
 .content-tc .Inventaire input[type=radio] {
@@ -422,8 +447,8 @@ body {
   color: white;
 }
 .content-tc .Inventaire label {
-  width: 53px;
-  height: 20px;
+  width: 52px;
+  height: 22px;
   padding: 1px 0;
   border: 1px solid rgb(0, 0, 0);
   color: grey;
@@ -435,22 +460,22 @@ body {
   border-radius: 5px;
 }
 .content-tc .Inventaire label:first-of-type {
-  margin-left: 25px;
+  margin-left: 4px;
 }
 .content-tc .contenu-sac {
   display: none;
-  width: 410px;
-  height: 200px;
+  width: 393px;
+  height: 150px;
   padding: 5px;
   border: 1px solid rgb(0, 0, 0);
-  border-radius: 5px;
+  border-radius: 10px;
   color: black;
   overflow: auto;
   line-height: 22px;
   font-family: "PT Sans", sans-serif;
   font-size: 10px;
   letter-spacing: 3px;
-  margin: 0 18px;
+  margin: 0 2px;
 }
 .content-tc .contenu-sac img {
   width: 25px;
@@ -473,20 +498,20 @@ body {
 .content-tc .space_o {
   padding-left: 5px;
 }
-.content-tc .Obtention {
+.content-tc .Utilisation {
   clear: both;
-  width: 445px;
-  margin: 20px auto 0 auto;
+  width: 400px;
+  background-clip: border-box;
 }
-.content-tc .Obtention input[type=radio] {
+.content-tc .Utilisation input[type=radio] {
   display: none;
 }
-.content-tc .Obtention input[type=radio]:checked + label {
+.content-tc .Utilisation input[type=radio]:checked + label {
   background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
   color: white;
 }
-.content-tc .Obtention label {
-  width: 95px;
+.content-tc .Utilisation label {
+  width: 74px;
   height: 20px;
   padding: 1px 0;
   border: 1px solid rgb(0, 0, 0);
@@ -497,70 +522,85 @@ body {
   font-size: 14px;
   line-height: 15px;
   border-radius: 5px;
-  margin-left: 2px;
 }
-.content-tc .Obtention label:first-of-type {
-  margin-left: 25px;
+.content-tc .Utilisation label:first-of-type {
+  margin-left: 6px;
 }
-.content-tc .contenu-obtention {
+.content-tc .contenu-utilisation {
   display: none;
-  width: 410px;
-  height: 200px;
+  width: 393px;
+  height: 252px;
   padding: 5px;
   border: 1px solid rgb(0, 0, 0);
-  border-radius: 5px;
+  border-radius: 10px;
   color: black;
   overflow: auto;
   line-height: 22px;
   font-family: "PT Sans", sans-serif;
   font-size: 10px;
   letter-spacing: 3px;
-  margin: 0 18px;
+  margin: 0 2px;
 }
-.content-tc .contenu-obtention img {
+.content-tc .contenu-utilisation img {
   width: 25px;
   margin-right: 5px;
   margin-top: -3px;
 }
-.content-tc .contenu-obtention a {
+.content-tc .contenu-utilisation a {
   text-decoration: none;
   color: rgb(25, 25, 112);
 }
-.content-tc #obt:checked ~ #c_obt,
-.content-tc #util:checked ~ #c_util,
-.content-tc #proj:checked ~ #c_proj,
-.content-tc #ceir:checked ~ #c_ceir {
+.content-tc #usage:checked ~ #c_usage,
+.content-tc #obtention:checked ~ #c_obtention,
+.content-tc #utilisation:checked ~ #c_utilisation,
+.content-tc #ceir:checked ~ #c_ceir,
+.content-tc #wishlist:checked ~ #c_wishlist {
   display: inline-block;
 }
 .content-tc .space_o {
   padding-left: 5px;
 }
-.content-tc .pkmnSbire {
-  margin: 15px;
-}
-.content-tc .descri-mission {
+.content-tc .descri-rp {
   flex: 1 1 auto;
-  height: 226px;
+  height: 500px;
   overflow: auto;
   padding: 5px 10px 5px 5px;
   font-size: 11px;
   text-align: justify;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid rgb(0, 0, 0);
 }
-.content-tc .descri-mission .titre {
-  color: rgb(25, 25, 112);
+.content-tc .descri-rp .titre {
+  color: darkblue;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
 }
-.content-tc .descri-mission .validate {
+.content-tc .descri-rp .perso-ava {
+  text-align: right;
+  font-size: 9px;
+  margin-top: -5px;
+}
+.content-tc .descri-rp span {
+  color: rgb(25, 25, 112);
+  font-weight: bold;
+}
+.content-tc .descri-rp .validate {
   color: rgb(0, 179, 41);
 }
-.content-tc .descri-mission .fail {
+.content-tc .descri-rp .fail {
   color: rgb(138, 0, 0);
 }
-.content-tc .descri-mission .encours {
+.content-tc .descri-rp .encours {
   color: rgb(1, 122, 131);
+}
+.content-tc .descri-rp .resume {
+  font-style: italic;
+  font-size: 11px;
+  margin-bottom: 5px;
+  opacity: 50%;
+}
+.content-tc .descri-rp .card-text {
+  margin-bottom: 0;
 }
 .content-tc .wishlist {
   height: 64px;
@@ -570,7 +610,7 @@ body {
   font-size: 11px;
 }
 .content-tc .couveuse {
-  height: 95px;
+  height: 122px;
   overflow: auto;
   border: 1px solid black;
   border-radius: 5px;
@@ -579,4 +619,151 @@ body {
 .content-tc .couveuse span {
   color: #2890ac;
   font-weight: 700;
+}
+.content-tc .content-rela {
+  width: 395px;
+  margin: 10px auto;
+}
+.content-tc .content-rela .nav-link {
+  display: block;
+  padding: 1px 3px;
+  margin-top: 2px;
+}
+.content-tc .content-rela .nav-link.active {
+  border-bottom: solid 2px rgb(25, 25, 112);
+  background-color: transparent;
+  border-radius: 15px;
+}
+.content-tc .content-rela .nav {
+  justify-content: center;
+  height: 137px;
+  overflow: auto;
+  border: solid 1px rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 5px 0;
+}
+.content-tc .content-rela .nav img {
+  border-radius: 12px;
+}
+.content-tc .content-rela .grid-pkmn {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(10px, auto);
+}
+.content-tc .content-rela .grid-pkmn .pkmn-espece {
+  display: flex;
+  justify-content: center;
+  grid-column: 1/5;
+  grid-row: 1;
+  font-size: 16px;
+  color: white;
+  font-family: "Neucha", cursive;
+  letter-spacing: 1px;
+  text-align: center;
+  background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
+  border-radius: 10px;
+  padding-top: 3px;
+  margin: 0 2px auto 2px;
+}
+.content-tc .content-rela .grid-pkmn .pkmn-espece .fas {
+  margin-left: 10px;
+  margin-top: 2px;
+  margin-right: 10px;
+}
+.content-tc .content-rela .grid-pkmn .pkmn-espece .type {
+  height: 17px;
+  width: 19px;
+  margin: 2px 0 2px 10px;
+  border: solid 1px rgb(0, 0, 0);
+  border-radius: 10px;
+}
+.content-tc .content-rela .grid-pkmn .avatar-rela {
+  border-radius: 5px;
+  border: solid 1px rgb(0, 0, 0);
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  grid-column: 1;
+  grid-row: 2;
+}
+.content-tc .content-rela .grid-pkmn .avatar-rela img {
+  border-radius: 5px;
+  width: 118px;
+}
+.content-tc .content-rela .grid-pkmn .rela-infos {
+  height: 191px;
+  overflow: auto;
+  grid-column: 2/5;
+  grid-row: 2;
+  border-radius: 5px;
+  border: solid 1px rgb(0, 0, 0);
+  padding: 6px 5px;
+  font-size: 11px;
+}
+.content-tc .content-rela .grid-pkmn .rela-infos .center {
+  text-align: center;
+}
+.content-tc .content-rela .grid-pkmn .rela-infos span {
+  color: #00aeff;
+}
+.content-tc .content-rela .grid-pkmn .stats-pkmn {
+  grid-column: 1/3;
+  grid-row: 3;
+  border-radius: 5px;
+  border: solid 1px rgb(0, 0, 0);
+  font-size: 10px;
+  height: 160px;
+  overflow: auto;
+  letter-spacing: 1px;
+  padding: 0 0 2px 6px;
+}
+.content-tc .content-rela .grid-pkmn .stats-pkmn div {
+  color: #00aeff;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.content-tc .content-rela .grid-pkmn .stats-pkmn span {
+  color: rgb(25, 25, 112);
+}
+.content-tc .content-rela .descri-duo {
+  flex: 1 1 auto;
+  height: 133px;
+  overflow: auto;
+  padding: 5px 10px 5px 5px;
+  font-size: 11px;
+  text-align: justify;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 20px;
+}
+.content-tc .content-rela .descri-duo span {
+  font-weight: bold;
+}
+.content-tc .content-rela .descri-duo .titre {
+  color: rgb(25, 25, 112);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.content-tc .content-rela .descri-duo .validate {
+  color: rgb(0, 179, 41);
+}
+.content-tc .content-rela .descri-duo .fail {
+  color: rgb(138, 0, 0);
+}
+.content-tc .content-rela .descri-duo .encours {
+  color: rgb(1, 122, 131);
+}
+.content-tc .kdo-ava {
+  border: solid 1px rgb(0, 0, 0);
+  padding: 5px 5px;
+  border-radius: 10px;
+  height: 495px;
+  overflow: auto;
+  margin-top: 5px;
+}
+.content-tc .kdo-ava .kdo-title {
+  font-size: 10px;
+  color: rgb(25, 25, 112);
 }/*# sourceMappingURL=style.css.map */

@@ -2,6 +2,7 @@
 $color-main : rgb(25, 25, 112);
 $color-black: rgb(0, 0, 0);
 $color-white: rgb(255, 255, 255);
+$color-light: #00aeff;
 $color-degrade: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
 $color-validate: rgb(0, 179, 41);
 $color-fail: rgb(138, 0, 0);
@@ -11,13 +12,33 @@ $color-no: grayscale(100%);
 body {
     background-color: transparent;
     font-size: 14px;
-    max-width: 596px;
-    //border: 1px solid red;
-    min-height: 550px;
+    max-width: 592px;
+    /*border: 1px solid red;*/
+    min-height: 565px;
+}
+
+.titre-part, .titre-part2 {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/5;
+    grid-row: 1;
+    font-size: 15px;
+    color: white;
+    font-family: "Neucha", cursive;
+    letter-spacing: 1px;
+    background-image: $color-degrade;
+    border-radius: 10px;
+    padding-top: 3px;
+    margin: 2px auto 11px;
+    width: 394px;
+}
+
+.titre-part2 {
+    margin: 11px auto 11px;
 }
 
 /* PARTIE SIDEBAR */
-$width-sidebar: 135px;
+$width-sidebar: 180px;
 
 #kaktus-sidebar {
     width: $width-sidebar;
@@ -32,7 +53,7 @@ $width-sidebar: 135px;
         width: $width-sidebar;
         border-radius: 10%;
         border: solid 2px $color-black;
-        margin-bottom: 15px;
+        margin-bottom: 13px;
         -webkit-transition: 2s; /* Safari 3.1 to 6.0 */
         transition: 2s;
 
@@ -65,23 +86,23 @@ $width-sidebar: 135px;
             }
 
             span {
-                font-size:11px;
+                font-size:13px;
                 text-transform: uppercase;
 
             }
 
             .pills-link {
                 display: block;
-                width: 135px;
+                width: $width-sidebar;
                 padding: 4px 10px;
                 border: solid 1px $color-black;
                 border-radius: 20px;
-                margin: 3.4% auto;
+                margin: 9px auto 10px;
             }
 
             .active {
                 color: #fff !important;
-                background-color: $color-main;
+                background-image: $color-degrade;
             }
 
             .fas, .far {
@@ -104,7 +125,7 @@ $width-sidebar: 135px;
 /* DEBUT GENERAL DES CONTENUS */
 .content-tc {
     position: absolute;
-    left: 150px;
+    left: 165px;
     width: 455px;
     padding: 8px 5px 5px 5px;
 
@@ -114,7 +135,7 @@ $width-sidebar: 135px;
 
     .perso-ident {
         justify-content: center;
-        width: 420px;
+        width: 392px;
         font-size: 15px;
         color: white;
         font-family: "Neucha", cursive;
@@ -133,7 +154,7 @@ $width-sidebar: 135px;
     }
     .perso {
         display: flex;
-        width: 415px;
+        width: 395px;
         margin: 12px auto;
         justify-content: space-between;
         padding: 2px 0 1px;
@@ -158,28 +179,28 @@ $width-sidebar: 135px;
 
         .perso-infos {
             height: 102px;
-            width: 300px;
+            width: 285px;
             overflow: auto;
-            border-radius: 5px;
+            border-radius: 10px;
             border: solid 1px $color-black;
             padding: 5px 5px;
             font-size: 11px;
 
             span {
-                color: #2890ac;
+                color: $color-light;
             }
         }
     }
 
     .blocdescri {
-        width: 415px;
-        margin: 15px auto;
+        width: 395px;
+        margin: 14px auto;
         background-clip: border-box;
         padding: 2px 0 1px;
 
         .descri-corps {
             flex: 1 1 auto;
-            height: 228px;
+            height: 251px;
             overflow: auto;
             padding: 5px 10px 5px 5px;
             font-size:11px;
@@ -198,25 +219,17 @@ $width-sidebar: 135px;
                 font-size:9px;
                 margin-top: -5px;
             }
-
-            .nope {
-                filter: $color-no;
-            }
-
-            .arenebadge {
-                padding: 0 5px 0 0;
-            }
         }
     }
     
     .bloc-card {
         display: flex;
-        width: 420px;
+        width: 400px;
         margin: 5px auto 15px;
         justify-content: space-between;
 
         .infos {
-            width: 185px;
+            width: 170px;
             border-radius: 10px;
             border: 1px solid $color-black;
             padding: 5px;
@@ -226,7 +239,7 @@ $width-sidebar: 135px;
             overflow: auto;
 
             a {
-                margin-left: 12px;
+                margin-left: 6px;
             }
 
             hr {
@@ -238,6 +251,17 @@ $width-sidebar: 135px;
             p {
                 margin: 0;
                 font-style: italic;
+            }
+
+            .badges {
+                img {
+                    width: 9%;
+                    margin: 0 1px;
+                    &.noObtain {
+                        filter: grayscale(100%);
+                        opacity: 20%;
+                    }
+                }
             }
 
             .title {
@@ -269,8 +293,8 @@ $width-sidebar: 135px;
     /* DEBUT DE LA PARTIE CONCERNANT LES POKEMONS */
 
     .content-pkmn {
-        width: 420px;
-        margin: 10px auto;
+        width: 394px;
+        margin: 4px auto;
 
         .nav-link {
             display: block;
@@ -349,7 +373,7 @@ $width-sidebar: 135px;
                 font-size: 11px;
 
                 span {
-                    color: #2890ac;
+                    color: $color-light;
                 }
             }
 
@@ -358,21 +382,21 @@ $width-sidebar: 135px;
                 grid-row: 3;
                 border-radius: 5px;
                 border: solid 1px $color-black;
-                font-size: 10px;
-                height: 150px;
+                font-size: 11px;
+                height: 175px;
                 overflow: auto;
                 letter-spacing: 1px;
                 padding: 0 0 2px 6px;
 
                 div {
-                    color: #63b3d9;
-                    font-size: 11px;
+                    color: $color-light;
+                    font-size: 14px;
                     text-transform: uppercase;
                     text-align:center;
                 }
 
                 span {
-                    color: $color-main;
+                    color: $color-light;
                 }
             }
 
@@ -382,13 +406,13 @@ $width-sidebar: 135px;
                 border-radius: 5px;
                 border: solid 1px $color-black;
                 padding: 0 5px;
-                height: 150px;
+                height: 175px;
                 overflow: auto;
 
                 div {
                     &:first-of-type, &:last-of-type {
-                        color: $color-main;
-                        font-size: 11px;
+                        color: $color-light;
+                        font-size: 14px;
                         text-transform: uppercase;
                         text-align:center;
                     }
@@ -440,16 +464,14 @@ $width-sidebar: 135px;
                 }
             }
         }
-
     }
     /* FIN DE LA PARTIE CONCERNANT LES POKEMONS */
 
     /* DEBUT DE LA PARTIE CONCERNANT L'INVENTAIRE */
 
-    /* Inventaire */
     .Inventaire {
         clear:both;
-        width:440px;
+        width:400px;
         background-clip: border-box;
 
         input[type=radio] {
@@ -462,8 +484,8 @@ $width-sidebar: 135px;
         }
 
         label {
-            width:53px; 
-            height:20px;
+            width:52px; 
+            height:22px;
             padding: 1px 0;
             border: 1px solid $color-black;
             color: grey;
@@ -475,26 +497,25 @@ $width-sidebar: 135px;
             border-radius: 5px;
 
             &:first-of-type {
-                margin-left:25px;
+                margin-left:4px;
             }
         }
-
     }
 
     .contenu-sac {
         display: none;
-        width: 410px; 
-        height: 200px;
+        width: 393px; 
+        height: 150px;
         padding: 5px;
         border: 1px solid $color-black;
-        border-radius : 5px;
+        border-radius : 10px;
         color: black;
         overflow: auto;
         line-height : 22px;
         font-family: 'PT Sans', sans-serif;
         font-size:10px;
         letter-spacing: 3px;
-        margin: 0 18px;
+        margin: 0 2px;
 
         img {
             width: 25px;
@@ -520,100 +541,107 @@ $width-sidebar: 135px;
     .space_o {
     padding-left:5px;
     }
-    /* Obtention / Utilisation / CEIR */
-        .Obtention {
-            clear:both;
-            width:445px; 
-            margin: 20px auto 0 auto;
     
-            input[type=radio] {
-                display:none;
-    
-                &:checked + label {
-                    background-image: $color-degrade;
-                    color: white;
-                }
-            }
+    .Utilisation {
+        clear:both;
+        width:400px;
+        background-clip: border-box;
 
-            label {
-                width:95px; 
-                height:20px;
-                padding: 1px 0;
-                border: 1px solid $color-black;
-                color: grey;
-                cursor: pointer;
-                text-align: center;
-                font-family: 'Sirin Stencil', cursive;
-                font-size:14px;
-                line-height: 15px;
-                border-radius: 5px;
-                margin-left:2px;
+        input[type=radio] {
+            display:none;
 
-                &:first-of-type {
-                    margin-left:25px;
-                }
+            &:checked + label {
+                background-image: $color-degrade;
+                color: white;
             }
-    
         }
 
-        .contenu-obtention {
-            display: none;
-            width: 410px; 
-            height: 200px;
-            padding: 5px;
+        label {
+            width:74px; 
+            height:20px;
+            padding: 1px 0;
             border: 1px solid $color-black;
-            border-radius : 5px;
-            color: black;
-            overflow: auto;
-            line-height : 22px;
-            font-family: 'PT Sans', sans-serif;
-            font-size:10px;
-            letter-spacing: 3px;
-            margin: 0 18px;
-    
-            img {
-                width: 25px;
-                margin-right: 5px;
-                margin-top: -3px;
+            color: grey;
+            cursor: pointer;
+            text-align:center;
+            font-family: 'Sirin Stencil', cursive;
+            font-size:14px;
+            line-height: 15px;
+            border-radius: 5px;
+
+            &:first-of-type {
+                margin-left:6px;
             }
         }
-        .contenu-obtention a {
-        text-decoration: none;
-        color: $color-main;
+
+    }
+
+    .contenu-utilisation {
+        display: none;
+        width: 393px; 
+        height: 252px;
+        padding: 5px;
+        border: 1px solid $color-black;
+        border-radius : 10px;
+        color: black;
+        overflow: auto;
+        line-height : 22px;
+        font-family: 'PT Sans', sans-serif;
+        font-size:10px;
+        letter-spacing: 3px;
+        margin: 0 2px;
+
+        img {
+            width: 25px;
+            margin-right: 5px;
+            margin-top: -3px;
         }
-    
-        #obt:checked ~ #c_obt, 
-        #util:checked ~ #c_util,
-        #proj:checked ~ #c_proj, 
-        #ceir:checked ~ #c_ceir { 
-            display:inline-block;
+
+        a {
+            text-decoration: none;
+            color: $color-main;
         }
-    
-        .space_o {
-        padding-left:5px;
-        }
+
+    }
+
+    #usage:checked ~ #c_usage, 
+    #obtention:checked ~ #c_obtention, 
+    #utilisation:checked ~ #c_utilisation, 
+    #ceir:checked ~ #c_ceir, 
+    #wishlist:checked ~ #c_wishlist { display:inline-block;}
+
+    .space_o {
+    padding-left:5px;
+    }
 
     /* FIN DE LA PARTIE CONCERNANT L'INVENTAIRE */
 
-    /* PARTIE SBIRE */
-    .pkmnSbire {
-        margin: 15px;
-    }
-
-    .descri-mission {
+    /* PARTIE RPS */
+    .descri-rp {
         flex: 1 1 auto;
-        height: 226px;
+        height: 500px;
         overflow: auto;
         padding: 5px 10px 5px 5px;
         font-size:11px;
         text-align: justify;
-        border-radius: 10px;
+        border-radius: 5px;
         border: 1px solid $color-black;
 
         .titre {
-            color: $color-main;
+            color: darkblue;
             text-transform: uppercase;
-            font-size: 12px;
+            font-size: 14px;
+        }
+
+        .perso-ava {
+            text-align:right;
+            font-size:9px;
+            margin-top: -5px;
+        }
+
+        span {
+            color: $color-main;
+            font-weight: bold;
         }
 
         .validate {
@@ -627,8 +655,19 @@ $width-sidebar: 135px;
         .encours {
             color: $color-progress;
         }
+
+        .resume {
+            font-style: italic;
+            font-size: 11px;
+            margin-bottom: 5px;
+            opacity: 50%;
+        }
+
+        .card-text {
+            margin-bottom: 0;
+        }
     }
-    /* FIN PARTIE SBIRE */
+    /* FIN PARTIE RPS */
 
     
     /* PARTIE BOX */
@@ -641,7 +680,7 @@ $width-sidebar: 135px;
     }
 
     .couveuse {
-        height: 95px;
+        height: 122px;
         overflow: auto;
         border: 1px solid black;
         border-radius: 5px;
@@ -654,4 +693,181 @@ $width-sidebar: 135px;
         }
     }
     /* FIN PARTIE BOX */
+
+    /* DEBUT PARTIE CONTACTS */
+
+    .content-rela {
+        width: 395px;
+        margin: 10px auto;
+
+        .nav-link {
+            display: block;
+            padding: 1px 3px;
+            margin-top: 2px;
+
+            &.active {
+                border-bottom: solid 2px $color-main;
+                background-color: transparent;
+                border-radius: 15px;
+            }
+        }
+
+        .nav {
+            justify-content: center;
+            height: 137px;
+            overflow: auto;
+            border: solid 1px $color-black;
+            border-radius: 5px;
+            padding: 5px 0;
+
+            img {
+                border-radius: 12px;
+            }
+        }
+        .grid-pkmn {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            grid-auto-rows: minmax(10px, auto);
+
+            .pkmn-espece {
+                display: flex;
+                justify-content: center;
+                grid-column: 1/5;
+                grid-row: 1;
+                font-size: 16px;
+                color: white;
+                font-family: "Neucha", cursive;
+                letter-spacing: 1px;
+                text-align: center;
+                background-image: $color-degrade;
+                border-radius: 10px;
+                padding-top: 3px;
+                margin: 0 2px auto 2px;
+
+                .fas {
+                    margin-left: 10px;
+                    margin-top: 2px;
+                    margin-right: 10px;
+                }
+
+                .type {
+                    height: 17px;
+                    width: 19px;
+                    margin: 2px 0 2px 10px;
+                    border: solid 1px $color-black;
+                    border-radius: 10px;
+                }
+            }
+
+            .avatar-rela {
+                border-radius: 5px;
+                border: solid 1px $color-black;
+                width: 120px;
+                display: flex;
+                justify-content: center;
+                grid-column: 1;
+                grid-row: 2;
+
+                img {
+                    border-radius: 5px;
+                    width: 118px;
+                }
+            }
+
+            .rela-infos {
+                height: 191px;
+                overflow: auto;
+                grid-column: 2/5;
+                grid-row: 2;
+                border-radius: 5px;
+                border: solid 1px $color-black;
+                padding: 6px 5px;
+                font-size: 11px;
+
+                .center {
+                    text-align: center;
+                }
+
+                span {
+                    color: $color-light;
+                }
+            }
+
+            .stats-pkmn {
+                grid-column: 1/3;
+                grid-row: 3;
+                border-radius: 5px;
+                border: solid 1px $color-black;
+                font-size: 10px;
+                height: 160px;
+                overflow: auto;
+                letter-spacing: 1px;
+                padding: 0 0 2px 6px;
+
+                div {
+                    color: $color-light;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    text-align:center;
+                }
+
+                span {
+                    color: $color-main;
+                }
+            }
+        }
+
+        .descri-duo {
+            flex: 1 1 auto;
+            height: 133px;
+            overflow: auto;
+            padding: 5px 10px 5px 5px;
+            font-size:11px;
+            text-align: justify;
+            border-radius: 10px;
+            border: 1px solid $color-black;
+            margin-top: 20px;
+    
+            span {
+                font-weight: bold;
+            }
+    
+            .titre {
+                color: $color-main;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+    
+            .validate {
+                color: $color-validate;
+            }
+    
+            .fail {
+                color: $color-fail;
+            }
+    
+            .encours {
+                color: $color-progress;
+            }
+        }
+    }
+    /* FIN PARTIE CONTACTS */
+
+    /* DEBUT PARTIE SUR LES KDO */
+
+    .kdo-ava {
+        border: solid 1px $color-black;
+        padding: 5px 5px;
+        border-radius: 10px;
+        height: 495px;
+        overflow: auto;
+        margin-top: 5px;
+
+        .kdo-title {
+            font-size: 10px;
+            color: $color-main;
+        }
+    }
+    /* DEBUT PARTIE SUR LES KDO */
 }
